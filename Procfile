@@ -1,2 +1,2 @@
-web: python run.py --bind 0.0.0.0:${PORT} wsgi
+web: python run.py
 release: python manage.py db upgrade
