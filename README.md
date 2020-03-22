@@ -1,2 +1,3 @@
-# Flask-Salary-Prediction
-Une petite application en Flask pour prÃ©dire votre salaire en fonction de votre expÃ©rience...
+# Entrainement SES
+Des textes à remplir pour valider vos acquis en sciences économiques sociales
+Crée pour aider les élève du lycée Lucie Aubrac (Courbevoie) pendant le confinement.
