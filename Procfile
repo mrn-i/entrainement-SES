@@ -1,2 +1,2 @@
-web: python run.py
+worker: python run.py
 release: python manage.py db upgrade
