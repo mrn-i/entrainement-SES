@@ -6,20 +6,33 @@ from numpy import round
 from config import DevelopmentConfig, ProductionConfig
 import os
 
+'''
 # Pour figer les variables d'environnement en DEVELOPPEMENT
-# os.environ["APP_SETTINGS"] = "config.DevelopmentConfig"
-# os.environ['DBUSER'] = "postgres"
-# os.environ['DBPASS'] = "azeR1234"
-# os.environ['DBHOST'] = "localhost"
-# os.environ['DBNAME'] = "postgres"
+os.environ["APP_SETTINGS"] = "config.DevelopmentConfig"
+os.environ['DBUSER'] = "postgres"
+os.environ['DBPASS'] = "azeR1234"
+os.environ['DBHOST'] = "localhost"
+os.environ['DBNAME'] = "postgres"
+'''
+'''
+#Pour figer les variables d'environnement en PRODUCTION
+os.environ["APP_SETTINGS"] = "config.ProductionConfig"
+os.environ['DBUSER'] = "zfjgsayxgjeago"
+os.environ['DBPASS'] = "a46aab50bd8ff8d9585a5c3aae90143e4ff93f9e993b7c1c31524b84748175af"
+os.environ['DBHOST'] = "ec2-54-247-169-129.eu-west-1.compute.amazonaws.com"
+os.environ['DBNAME'] = "dohirlotb7iqt"
+'''
+
+os.environ["APP_SETTINGS"] = "config.ProductionConfig"
 
 app = Flask(__name__)
 #Permet d'importer toutes les variables de configuration
 # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-# app.config.from_object(os.environ["APP_SETTINGS"])
-# app.config.from_object("config.DevelopmentConfig")
+#app.config.from_object("config.DevelopmentConfig")
 # app.config['SQLALCHEMY_ECHO'] = True
-app.config.from_object(os.environ.get('APP_SETTINGS', DevelopmentConfig))
+#app.config.from_object(os.environ.get('APP_SETTINGS', DevelopmentConfig))
+
+app.config.from_object(os.environ["APP_SETTINGS"])
 app.secret_key = 'development key' # Flask_WTform CSFR protection
 
 from .models import Result, SaveTest
