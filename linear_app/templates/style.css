@@ -1,0 +1,20 @@
+p {
+    color: red !important;
+}
+
+input#submit {
+    background-color: #5bc0de;
+    font-weight: bold;
+    border-color: grey;
+}
+
+input#word2 {
+    background-color: #5bc0de;
+    line-height: 70%
+}
+
+#answer {
+    background-color: #5bc0de;
+    font-weight: bold;
+    padding:1.5px;
+}

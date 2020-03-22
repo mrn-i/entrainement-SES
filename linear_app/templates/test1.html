@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<style>
+input#submit {
+    background-color: #5bc0de;
+    font-weight: bold;
+    border-color: grey;
+}
+
+</style>
+
+<div class="formwrapper">
+  <form method="POST" action = "{{ url_for('test1') }}">
+
+      <div class="formwrapper">
+            <div class="form-field">
+               {{ form.prenom.label }}
+               {{ form.prenom}}
+               <br>
+               {{ form.nom.label }}
+               {{ form.nom }}
+               <br>
+                {{ form.groupe.label }}
+               {{ form.groupe }}
+               <br>
+            </div>
+    </div>
+
+<h3>Synthèse II.A. Le vote comme un acte individuel</h3>
+<div><p style="font-size:100%; line-height: 110%; text-align:justify;">
+    Le vote est avant tout un acte {{ form.word1 }}.
+    En votant, les électeurs choisissent le parti qui correspond le mieux à leur {{ form.word2 }} personnelles.
+    Auparavant, le vote était largement influencé par les notables mais la mise en place de {{ form.word3 }}
+    en 1913 est le signe d’une nouvelle vision du votant comme d’un électeur {{ form.word4 }}, suffisamment instruit et compétent pour choisir
+    ce qui servira le mieux son intérêt parmi l’{{ form.word5 }} (ensemble des programmes,
+    candidats et partis en compétition). L’une des raisons pour lesquelles le droit vote des femmes a été aussi tardif en France est justement
+    le fait que beaucoup pensaient que leur vote serait influencé par {{ form.word6 }} et ne reflèterait pas leur intérêt individuel et personnel.
+D’autre part, on peut également considérer le vote comme un acte de plus en plus individuel en raison du {{ form.word7 }} des identités partisanes.
+    En effet, dans les années 1960 les individus avaient tendance à {{ form.word8 }} fortement à une orientation politique et à voter en fonction de
+    celle-ci. Aujourd’hui nous constatons un déclin de ces identités collectives et un développement du vote {{ form.word9 }} : les électeurs votent
+    pour le candidat qui semble le mieux défendre leurs intérêts selon les enjeux qu’ils jugent les plus importants sur le moment. On observe ainsi
+    un déclin du « {{ form.word10 }} » pour les ouvriers qui ne votent plus majoritairement à gauche comme c’était le cas auparavant et les élections
+    se jouent de plus en plus sur des {{ form.word11 }} précis comme le chômage ou l’immigration.
+Cependant, il faut tout de même remarquer que le vote ne pourra jamais être un acte tout à fait {{ form.word12 }},
+    dans la mesure où la position parfaitement rationnelle d’un point de vue utilitariste serait justement de ne pas aller voter,
+    c’est le {{ form.word13 }}. Pour dépasser ce paradoxe, il est donc nécessaire de voir que le vote revêt également
+    d’une dimension {{ form.word14 }}.
+ <br></p></div>
+
+    <div class="center-content">
+
+     {{ form.submit }}
+    </div>
+  </form>
+</div>
+
+
+
+{% endblock %}
