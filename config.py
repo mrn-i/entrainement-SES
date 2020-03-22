@@ -8,21 +8,26 @@ class Config(object):
     # Adapt Python types to PostgreSQSL types.
     # While doing so, database will be connected to the application.
     # This will occure into models.py.
+    '''
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format( \
         dbuser=os.environ['DBUSER'],
         dbpass=os.environ['DBPASS'],
         dbhost=os.environ['DBHOST'],
         dbname=os.environ['DBNAME'])
     print(SQLALCHEMY_DATABASE_URI)
-    
+    '''
 class ProductionConfig(Config):
     DEBUG = False
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SQLALCHEMY_DATABASE_URI = 'postgres://zfjgsayxgjeago:a46aab50bd8ff8d9585a5c3aae90143e4ff93f9e993b7c1c31524b84748175af@ec2-54-247-169-129.eu-west-1.compute.amazonaws.com:5432/dohirlotb7iqt'
 
 class StagingConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
 
 class DevelopmentConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:azeR1234@localhost/postgres'
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
     DEVELOPMENT = True
     DEBUG = True
 

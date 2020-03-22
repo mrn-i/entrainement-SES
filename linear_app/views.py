@@ -3,28 +3,43 @@
 from flask import Flask, render_template, url_for,	 request
 from sklearn.externals import joblib
 from numpy import round
-
+from config import DevelopmentConfig, ProductionConfig
 import os
 
-# Pour figer les variables d'environnement
-os.environ["APP_SETTINGS"] = "config.ProductionConfig"
-os.environ['DBUSER'] = "postgres"
-os.environ['DBPASS'] = "azeR1234"
-os.environ['DBHOST'] = "localhost"
-os.environ['DBNAME'] = "postgres"
+# Pour figer les variables d'environnement en DEVELOPPEMENT
+# os.environ["APP_SETTINGS"] = "config.DevelopmentConfig"
+# os.environ['DBUSER'] = "postgres"
+# os.environ['DBPASS'] = "azeR1234"
+# os.environ['DBHOST'] = "localhost"
+# os.environ['DBNAME'] = "postgres"
 
 app = Flask(__name__)
 #Permet d'importer toutes les variables de configuration
 # app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-app.config.from_object(os.environ["APP_SETTINGS"])
-app.config.from_object("config.ProductionConfig")
-app.config['SQLALCHEMY_ECHO'] = True
-
+# app.config.from_object(os.environ["APP_SETTINGS"])
+# app.config.from_object("config.DevelopmentConfig")
+# app.config['SQLALCHEMY_ECHO'] = True
+app.config.from_object(os.environ.get('APP_SETTINGS', DevelopmentConfig))
 app.secret_key = 'development key' # Flask_WTform CSFR protection
 
 from .models import Result, SaveTest
 from .models import db
 from .templates.includes.forms import AnswerForms, AnswerForms2
+
+@app.before_request
+def before_request():
+    """Connect to the database before each request."""
+    # g = global object Flask uses for passing information to views/modules.
+    # g.db = db
+    # g.db.connect()
+    pass
+
+@app.after_request
+def after_request(response):
+    """Close the database connection after each request."""
+    # g.db.close()
+    return response
+
 
 @app.route("/")
 def index():
