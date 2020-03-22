@@ -21,7 +21,9 @@ class Config(object):
 class ProductionConfig(Config):
     DEBUG = False
     SQLALCHEMY_TRACK_MODIFICATIONS = True
-    #SQLALCHEMY_DATABASE_URI = 'postgres://zfjgsayxgjeago:a46aab50bd8ff8d9585a5c3aae90143e4ff93f9e993b7c1c31524b84748175af@ec2-54-247-169-129.eu-west-1.compute.amazonaws.com:5432/dohirlotb7iqt'
+    SQLALCHEMY_DATABASE_URI = 'postgres://zfjgsayxgjeago:a46aab50bd8ff8d9585a5c3aae90143e4ff93f9e993b7c1c31524b84748175af@ec2-54-247-169-129.eu-west-1.compute.amazonaws.com:5432/dohirlotb7iqt'
+
+    '''
     os.environ['DBUSER'] = "zfjgsayxgjeago"
     os.environ['DBPASS'] = "a46aab50bd8ff8d9585a5c3aae90143e4ff93f9e993b7c1c31524b84748175af"
     os.environ['DBHOST'] = "ec2-54-247-169-129.eu-west-1.compute.amazonaws.com"
@@ -31,7 +33,7 @@ class ProductionConfig(Config):
         dbpass=os.environ['DBPASS'],
         dbhost=os.environ['DBHOST'],
         dbname=os.environ['DBNAME'])
-
+    '''
 
 
 class StagingConfig(Config):

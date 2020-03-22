@@ -23,7 +23,7 @@ os.environ['DBHOST'] = "ec2-54-247-169-129.eu-west-1.compute.amazonaws.com"
 os.environ['DBNAME'] = "dohirlotb7iqt"
 '''
 
-os.environ["APP_SETTINGS"] = "config.DevelopmentConfig"
+os.environ["APP_SETTINGS"] = "config.ProductionConfig"
 
 app = Flask(__name__)
 #Permet d'importer toutes les variables de configuration
