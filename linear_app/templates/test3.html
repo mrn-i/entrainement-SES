@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<div class="formwrapper">
+  <form method="POST" action = "{{ url_for('test3') }}">
+
+      <div class="formwrapper">
+            <div class="form-field">
+               {{ form.prenom.label }}
+               {{ form.prenom}}
+               <br>
+               {{ form.nom.label }}
+               {{ form.nom }}
+               <br>
+                {{ form.groupe.label }}
+               {{ form.groupe }}
+               <br>
+            </div>
+    </div>
+
+
+<h3>Synthèse II.C. Comment expliquer la volatilité du vote ?</h3>
+<div><p class="text-exo">
+    Depuis les années 1970, la {{ form.word1 }} électorale a augmenté. D’une élection à une autre, les électeurs peuvent voter pour des partis {{ form.word2 }} bien que ces derniers appartiennent généralement au même champ politique (seulement {{ form.word3 }} des électeurs qui avaient voté pour N. Sarkozy au premier tour des présidentielles de 2012 ont voté à gauche en 2017). Ils peuvent aussi choisir de {{ form.word4 }} alors qu’ils avaient voté aux élections précédentes. {{ form.word5 }} est la forme de volatilité électorale la plus fréquente (entre {{ form.word6 }} % et 20 % selon les partis).
+L’augmentation de la volatilité électorale peut être expliquée par une baisse de l’influence des {{ form.word7 }}. L’identité des individus est plus complexe qu’auparavant car ils appartiennent à plusieurs {{ form.word8 }} en même temps qui ne vont pas toujours dans le même sens. On assiste ainsi à une {{ form.word9 }} des variables explicatives du vote qui peuvent apporter du changement.
+Les changements du comportement électoral peuvent aussi être liés à l’influence croissante des {{ form.word10 }}. Les électeurs feraient plus attention aux promesses des partis politiques, aux médias et à la situation {{ form.word11 }} et sociale avant de choisir pour qui voter. Ce choix peut changer si l’{{ form.word12 }} change, c’est le propre du vote {{ form.word13 }}.
+
+ <br></p></div>
+
+<br>
+    <div class="center-content">
+     {{ form.submit }} <span style="font-style: italic;"> En cliquant ici, vos réponses sont enregistrées et la correction s'affiche.</span>
+    </div>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,15 +1,5 @@
 {% extends 'layout.html' %}
-
 {% block body %}
-
-<style>
-input#submit {
-    background-color: #5bc0de;
-    font-weight: bold;
-    border-color: grey;
-}
-
-</style>
 
 <div class="formwrapper">
   <form method="POST" action = "{{ url_for('test1') }}">
@@ -28,8 +18,9 @@ input#submit {
             </div>
     </div>
 
+
 <h3>Synthèse II.A. Le vote comme un acte individuel</h3>
-<div><p style="font-size:100%; line-height: 110%; text-align:justify;">
+<div><p class="text-exo">
     Le vote est avant tout un acte {{ form.word1 }}.
     En votant, les électeurs choisissent le parti qui correspond le mieux à leur {{ form.word2 }} personnelles.
     Auparavant, le vote était largement influencé par les notables mais la mise en place de {{ form.word3 }}
@@ -49,13 +40,11 @@ Cependant, il faut tout de même remarquer que le vote ne pourra jamais être un
     d’une dimension {{ form.word14 }}.
  <br></p></div>
 
+<br>
     <div class="center-content">
-
-     {{ form.submit }}
+     {{ form.submit }} <span style="font-style: italic;"> En cliquant ici, vos réponses sont enregistrées et la correction s'affiche.</span>
     </div>
   </form>
 </div>
-
-
 
 {% endblock %}

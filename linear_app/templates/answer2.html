@@ -1,37 +1,22 @@
 {% extends 'layout.html' %}
-
 {% block body %}
-<style>
-#answer {
-    background-color: #5bc0de;
-    font-weight: bold;
-    padding:1.5px;
-}
 
-#prop {
-    background-color: yellow;
-    font-weight: bold;
-    padding:1.5px;
-}
-</style>
+<h3>Synthèse II.B. Le vote comme acte collectif </h3>
 
-<h3>CORRECTION synthèse II.B. Le vote comme acte collectif </h3>
-<div><p style="font-size:110%; line-height: 110%; text-align:justify;">
-    Le vote n’est pas uniquement un acte individuel, c’est également un acte <span id="answer">collectif</span>. En effet, lors de la <span id="answer">socialisation</span>  notre milieu social nous transmet des <span id="answer">valeurs</span>  qui vont influencer notre identification politique de manière durable. Les études montrent ainsi que <span id="answer">46 %</span> des individus votent à droite ou à gauche comme leur parent, et ce chiffre monte à <span id="answer">66 %</span>  si l’on ajoute l’abstention et les électeurs qui reproduisent la même absence de choix que leurs parents.
-Les politistes ont donc mis au point des modèle qui peuvent dans une certaine mesure <span id="answer">prédire</span> le vote des électeurs en fonction de leur <span id="answer">variables sociales</span>  (sexe, âge, niveau de diplôme, catégorie socio-professionnelle, religion etc.). En effet, ces variables structurent l’identification politique et les préférences partisanes des individus, ce qui influence leur <span id="answer">vote</span>. On peut par exemple remarquer que le vote pour la droite traditionnelle est <span id="answer">5 </span>.fois plus élevé chez les plus de 70 ans que chez les moins de 25 ans, et <span id="answer">7,3 </span> fois plus élevés pour les catholiques pratiquant que pour les « sans religions ».
-Cependant, on assiste à une <span id="answer">recomposition</span> de ces variables explicative du vote. De fait, certaines variables qui ont pendant longtemps été associées à un type de vote ont vu leur significativité <span id="answer">s’affaiblir</span> au profit de nouvelles distinctions. On peut prendre l’exemple du groupe des ouvriers qui a pendant longtemps voté très à <span id="answer">gauche</span> et dont <span id="answer">43%</span> des membres ont voté pour le Front National aux élections régionales de 2015. Par ailleurs être indépendant ou richement doté en patrimoine est aujourd’hui prédictif d’un vote <span id="answer">à droite</span>, alors qu’être salarié du public est prédictif d’un vote <span id="answer">à gauche</span>.
-
-
-
- <br><br></p></div>
-
-<h4>Vos réponses</h4>
-<div><p style="font-size:110%; line-height: 110%; text-align:justify;">
+<h4><span id="prop">Vos réponses</span></h4>
+<div><p class="text-exo">
 Le vote n’est pas uniquement un acte individuel, c’est également un <span id="prop">{{ prop[0] }}</span>. En effet, lors de la <span id="prop">{{ prop[1] }}</span> notre milieu social nous transmet des <span id="prop">{{ prop[2] }}</span>  qui vont influencer notre identification politique de manière durable. Les études montrent ainsi que <span id="prop">{{ prop[3] }}</span> des individus votent à droite ou à gauche comme leur parent, et ce chiffre monte à <span id="prop">{{ prop[4] }}</span>  si l’on ajoute l’abstention et les électeurs qui reproduisent la même absence de choix que leurs parents.
 Les politistes ont donc mis au point des modèle qui peuvent dans une certaine mesure <span id="prop">{{ prop[5] }}</span> le vote des électeurs en fonction de leur <span id="prop">{{ prop[6] }}</span> (sexe, âge, niveau de diplôme, catégorie socio-professionnelle, religion etc.). En effet, ces variables structurent l’identification politique et les préférences partisanes des individus, ce qui influence leur <span id="prop">{{ prop[7] }}</span>. On peut par exemple remarquer que le vote pour la droite traditionnelle est <span id="prop">{{ prop[8] }}</span> fois plus élevé chez les plus de 70 ans que chez les moins de 25 ans, et <span id="prop">{{ prop[9] }}</span> fois plus élevés pour les catholiques pratiquant que pour les « sans religions ».
 Cependant, on assiste à une <span id="prop">{{ prop[10] }}</span> de ces variables explicative du vote. De fait, certaines variables qui ont pendant longtemps été associées à un type de vote ont vu leur significativité <span id="prop">{{ prop[11] }}</span> au profit de nouvelles distinctions. On peut prendre l’exemple du groupe des ouvriers qui a pendant longtemps voté très à <span id="prop">{{ prop[12] }}</span> et dont <span id="prop">{{ prop[13] }}</span> des membres ont voté pour le Front National aux élections régionales de 2015. Par ailleurs être indépendant ou richement doté en patrimoine est aujourd’hui prédictif d’un vote <span id="prop">{{ prop[14] }}</span>, alors qu’être salarié du public est prédictif d’un vote <span id="prop">{{ prop[15] }}</span>.
-
-
  <br><br></p></div>
+
+<h4><span id="answer">Correction</span></h4>
+<div><p class="text-exo">
+    Le vote n’est pas uniquement un acte individuel, c’est également un acte <span id="answer">collectif</span>. En effet, lors de la <span id="answer">socialisation</span>  notre milieu social nous transmet des <span id="answer">valeurs</span>  qui vont influencer notre identification politique de manière durable. Les études montrent ainsi que <span id="answer">46 %</span> des individus votent à droite ou à gauche comme leur parent, et ce chiffre monte à <span id="answer">66 %</span>  si l’on ajoute l’abstention et les électeurs qui reproduisent la même absence de choix que leurs parents.
+Les politistes ont donc mis au point des modèle qui peuvent dans une certaine mesure <span id="answer">prédire</span> le vote des électeurs en fonction de leur <span id="answer">variables sociales</span>  (sexe, âge, niveau de diplôme, catégorie socio-professionnelle, religion etc.). En effet, ces variables structurent l’identification politique et les préférences partisanes des individus, ce qui influence leur <span id="answer">vote</span>. On peut par exemple remarquer que le vote pour la droite traditionnelle est <span id="answer">5 </span>.fois plus élevé chez les plus de 70 ans que chez les moins de 25 ans, et <span id="answer">7,3 </span> fois plus élevés pour les catholiques pratiquant que pour les « sans religions ».
+Cependant, on assiste à une <span id="answer">recomposition</span> de ces variables explicative du vote. De fait, certaines variables qui ont pendant longtemps été associées à un type de vote ont vu leur significativité <span id="answer">s’affaiblir</span> au profit de nouvelles distinctions. On peut prendre l’exemple du groupe des ouvriers qui a pendant longtemps voté très à <span id="answer">gauche</span> et dont <span id="answer">43%</span> des membres ont voté pour le Front National aux élections régionales de 2015. Par ailleurs être indépendant ou richement doté en patrimoine est aujourd’hui prédictif d’un vote <span id="answer">à droite</span>, alors qu’être salarié du public est prédictif d’un vote <span id="answer">à gauche</span>.
+ <br><br></p></div>
+
+
 
 {% endblock %}

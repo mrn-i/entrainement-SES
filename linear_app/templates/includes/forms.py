@@ -34,7 +34,7 @@ class AnswerForms(FlaskForm):
     word17 = StringField('......', [DataRequired()])
     word18 = StringField('......', [DataRequired()])
 
-    submit = SubmitField('Envoyez vos réponses')
+    submit = SubmitField('Valider')
 
 class AnswerForms2(FlaskForm):
     nom = StringField('Nom', [DataRequired()])

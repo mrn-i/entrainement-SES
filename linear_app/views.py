@@ -23,7 +23,7 @@ os.environ['DBHOST'] = "ec2-54-247-169-129.eu-west-1.compute.amazonaws.com"
 os.environ['DBNAME'] = "dohirlotb7iqt"
 '''
 
-os.environ["APP_SETTINGS"] = "config.ProductionConfig"
+os.environ["APP_SETTINGS"] = "config.DevelopmentConfig"
 
 app = Flask(__name__)
 #Permet d'importer toutes les variables de configuration
@@ -112,6 +112,31 @@ def test2():
 
     else:
         return render_template("test2.html", form=form)
+
+@app.route("/test3", methods=('GET', 'POST'))
+def test3():
+    form = AnswerForms()
+
+    if request.method == "POST":
+        keylist = [("word" + str(x)) for x in range(1,18)]
+        student_answers = [form.data[x] for x in keylist]
+
+        result = SaveTest(
+            nom=str(dict(request.form)["nom"]),
+            prenom=str(dict(request.form)["prenom"]),
+            groupe=str(dict(request.form)["groupe"]),
+            answer=[form.data[x] for x in keylist],
+            exercice = 'Synthese 2C'
+        )
+
+        db.session.add(result)
+        db.session.commit()
+        app.logger.info(result.id)
+
+        return render_template("answer3.html", prop = student_answers)
+
+    else :
+        return render_template("test3.html", form = form)
 
 
 @app.route("/predict", methods = ["GET", "POST"])

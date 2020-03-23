@@ -1,0 +1,23 @@
+input#submit {
+    background-color: coral;
+    font-weight: bold;
+    border-color: grey;
+}
+
+#answer {
+    background-color: greenyellow;
+    font-weight: bold;
+    padding:1.5px;
+}
+
+#prop {
+    background-color: gold;
+    font-weight: bold;
+    padding:1.5px;
+}
+
+p.text-exo {
+    font-size:110%;
+    line-height: 110%;
+    text-align:justify;
+}
