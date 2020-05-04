@@ -1,0 +1,304 @@
+{% block body %}
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS_ch7.css') }}">
+   <img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13274947932468.jpg" class="imagelogo" alt="image logo"/></a>
+   <h1 style="margin-left: 270px; text-align: center;">Chapitre 6 – Voter : Une affaire individuelle ou collective ?</h1>
+
+	
+
+<nav class="dessous">
+		<h3> Plan du cours</h3>
+
+      	<p class="tA">Programme officiel</p>
+      	<p class="tA">Vidéos du cours</p>
+        <p class="tI">I. Comment expliquer l’abstention électorale en France ?</p>
+		<p class="tA">A – Comment évolue la participation électorale ?</p>
+		<p class="t1">1. Mesurer la participation électorale et l’abstention</p>
+		<p class="t1">2. Une abstention inégale selon les enjeux de l’élection</p>
+		<p class="tA">B – Comment expliquer la montée l’abstention ?</p>
+		<p class="t1">1. L’abstention peut être le signe d’un manque d’intégration sociale</p>
+		<p class="t1">2. L’abstention comme moyen de revendication</p>
+		<p class="tI">II. Comment expliquer le vote ?</p>
+		<p class="tA">A – Le vote comme un acte individuel</p>
+		<p class="tA">B – Le vote comme acte collectif</p>
+		<p class="tA">C – Comment expliquer la volatilité du vote ?</p>
+
+      	
+		<p class="tA">Aller plus loin</p>
+		</br>
+		<h3><em>Supports en vidéos:</em></h3>
+		<p class="tA">Des vidéos de la chaînes les SES en vidéo. Il s'agit du chapitre "Comment s'organise la vie politique ?" qui fait désormais partie des nouveaux programme en classe de seconde. Ce n'est pas obligatoire mais peut vous apporter des éclairages intéressant pour ce chapitre : </p>
+		<p style="margin-left: 0px;">La séparation des pouvoirs</br>
+		<a href="https://youtu.be/7ypp4vFvQU8" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/pol1.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
+		<p style="margin-left: 0px;">Effets des modes de scrutins</br>
+		<a href="https://youtu.be/11QdM8sWMyI" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/pol2.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
+		<p style="margin-left: 0px;">Les différents acteurs de la vie politique</br>
+		<a href="https://youtu.be/bCG0u6AmGeE" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/pol3.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
+
+		<h3><em>Pour réviser :</em></h3></br>
+		<p>Vidéo Bilan Lelivrescolaire.fr</p>
+		<a href="https://youtu.be/gGCUltz0Ljg" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/bilan.jpg') }}" class="imagevideo3" alt="image vidéo"/></a>
+</nav>
+
+<section>
+
+	<p class="programme"><strong>Programme officiel - Objectifs d'apprentissage :</strong></br>
+	- Être capable d’interpréter des taux d’inscription sur les listes électorales, des taux de participation et d’abstention aux élections.</br>
+	- Comprendre que la participation électorale est liée à divers facteurs inégalement partagés au sein de la population (degré d’intégration sociale, intérêt pour la politique, sentiment de compétence politique) et de variables contextuelles (perception des enjeux de l’élection, types d’élection).</br>
+	- Comprendre que le vote est à la fois un acte individuel (expression de préférences en fonction d’un contexte et d’une offre électorale) et un acte collectif (expression d’appartenances sociales).</br>
+	- Comprendre que la volatilité électorale revêt des formes variées (intermittence du vote, changement des préférences électorales) et qu’elle peut refléter un affaiblissement ou une recomposition du poids de certaines variables sociales, un déclin de l’identification politique (clivage gauche/droite notamment) et un renforcement du poids des variables contextuelles.</p>
+
+
+	<h3 style="text-align: center;"> Vidéos du cours</h3>
+
+	<table>
+	<thead>
+	   <tr>
+	     <th><em>Vidéo 1</em></th>
+	     <th><em>Vidéo 2</em></th>
+	     <th><em>Vidéo 3</em></th>
+	   </tr>
+	</thead>
+	 
+	<tbody>
+	   <tr>
+	     <td><a href="https://youtu.be/PJeV3ecxL9E" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/montee abstention.jpg') }}" class="imagevideo" alt="image vidéo"/></a></td>
+	     <td><a href="https://youtu.be/z8DXoV4IKbg?t=16" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/Comment expliquer le vote.jpg') }}" class="imagevideo" alt="image vidéo"/></a></td>
+	     <td><a href="https://youtu.be/fQ5TDbesdfM" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/B. vote collectif.jpg') }}" class="imagevideo" alt="image vidéo"/></a></td>
+	   </tr>
+	</tbody>
+	</table>
+
+
+     <h1>II. Comment expliquer le vote ?</h1>
+	   <h2>A.	Le vote comme un acte individuel</h2>
+	   <p>
+        <img src="{{ url_for('static', filename='images/doc.7.jpg') }}"  class="imageflottante" alt="Image flottante" />
+        L’isoloir a été mis en place en France en 1913 pour garantir le caractère individuel du vote.
+		En effet, avant cette date ce sont les maires et les adjoints qui mettent les bulletins dans l’urne et le vote n’est donc pas secret. De ce fait, les électeurs pouvaient subir des sanctions si leur vote n’allaient pas dans le sens des notables et ils votaient donc moins en fonction de leur orientation personnelle qu’en fonction de la pression sociale.
+
+		Aujourd’hui, la pratique de l’isoloir s’est généralisée et on insiste au contraire pour que le vote soit un acte uniquement individuel et secret et ne soit pas influencé par des groupes de pression. C’est une des raisons qui explique le grand retard français dans l’octroie du vote aux femmes car on pensait qu’elles ne voteraient pas selon des convictions personnelles, mais selon les directives de l’église. 
+		</p>
+			
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>D’après Ipsos, M. Le Pen arrive en tête chez les ouvriers au premier tour des présidentielles françaises de 2017.</li>
+      	 <li>La gauche recueille 33 % des suffrages exprimés chez les ouvriers.</li>
+      	 <li>Le vote de classe s’est affaibli puisque c’est M. Le Pen qui arrive en tête chez les ouvriers (même si, tous candidats confondus, la gauche obtient un score proche). On remarque cependant que le vote ouvrier pour la droite traditionnelle (F. Fillon) reste très faible, ce qui montre que le vote de classe n’a pas tout à fait disparu.</li>
+      	</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.8.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div>
+
+      	</br></br>
+
+      	<p class="rappel"> <strong>A retenir :</br>
+		Même si le vote est un acte individuel, les électeurs ne décident jamais complètement seul pour qui ils vont voter et depuis les années 1950 on parle d’un « vote de classe » pour désigner le fait que certains groupes de la population ont tendance à respecter certains types de vote, comme le vote à gauche (voire à l’extrême gauche) pour les ouvriers et le vote à droite pour les catholiques. 
+		Cependant on constate ces dernière années un affaiblissement du vote de classe. Par exemple en 2017 seulement un tier des ouvriers a voté pour des candidats de gauche aux élections présidentielles contre environ la moitié durant les années 1960 (ce qui s’explique notamment par l’augmentation du vote FN).
+		Cet affaiblissement du vote de classe signifierait donc que les individus sont moins influencés par leur milieu social et prennent davantage leurs décisions en fonction de la situation particulière, c’est-à-dire de variables contextuelles.</strong></p>
+
+		
+
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>Le « vote sur enjeux » est une situation où les électeurs prennent le temps de regarder les programmes des partis et des candidats pour cerner les tenants et les aboutissants du vote qu’ils auront à effectuer et ainsi réaliser leur vote au plus près de leurs intérêts et/ou leurs convictions. </li>
+      	 <li>L’existence d’électeurs à la fois moins fidèles aux organisations partisanes et stratèges permet d’illustrer l’existence d’électeurs rationnels. Ils sont capables de choisir l’option qui leur convient le mieux parmi l’offre politique (ensemble des programmes, candidats et partis en compétition).</li>
+      	 <li>Le chômage, la pauvreté, l’immigration. </li>
+      	 <li>Le vote peut donc aussi être considéré comme un acte individuel car l’existence d’électeurs rationnels agissant selon leurs propres intérêts montre bien le déclin de la contrainte collective qui pesait auparavant sur les électeurs.</li>
+      	</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.9.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div>
+
+      	</br></br>
+
+      	<div id="conteneur">
+		<div class="questions">
+		<p>
+		En sciences sociales un acte rationnel se définit comme une bonne adéquation entre les moyens et les fins d’un individu. En d’autres termes, il est rationnel pour un individu d’effectuer une action si elle lui apporte plus de satisfaction que d’insatisfaction.</br>
+		Selon cette définition, voter n’est donc pas un acte rationnel car l’insatisfaction à aller voter (se déplacer, faire la queue etc.) est normalement bien supérieure à la satisfaction car un seul vote n’a que peu d’effet sur le résultat d’une élection.</br>
+		Si les individus vont quand-même voter, cela signifie qu’ils ne le font pas pour des raison uniquement individuelles et rationnelles. Cela peut être par habitude familiale, par volonté d’exercer sa citoyenneté etc. etc. Cela montre que le fait d’aller voter dépend surtout du fait d’appartenir à une communauté et donc que c’est également un acte collectif.</p></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.10.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div>
+       
+		</br></br>
+
+        <p class="synthèse"> <strong>Synthèse : II.A. Le vote comme un acte individuel :</strong> </br>
+		Le vote est avant tout un acte individuel. En votant, les électeurs choisissent le parti qui correspond le mieux à leur préférences personnelles. Auparavant, le vote était largement influencé par les notables mais la mise en place de l’isoloir en 1913 est le signe d’une nouvelle vision du votant comme d’un électeur rationnel, suffisamment instruit et compétent pour choisir ce qui servira le mieux son intérêt parmi l’offre électorale (ensemble des programmes, candidats et partis en compétition). L’une des raisons pour lesquelles le droit vote des femmes a été aussi tardif en France est justement le fait que beaucoup pensaient que leur vote serait influencé par l’église et ne reflèterait pas leur intérêt individuel et personnel.
+		D’autre part, on peut également considérer le vote comme un acte de plus en plus individuel en raison du déclin des identités partisanes. En effet, dans les années 1960 les individus avaient tendance à s’identifier fortement à une orientation politique et à voter en fonction de celle-ci. Aujourd’hui nous constatons un déclin de ces identités collectives et un développement du vote sur enjeux : les électeurs votent pour le candidat qui semble le mieux défendre leurs intérêts selon les enjeux qu’ils jugent les plus importants sur le moment. On observe ainsi un déclin du « vote de classe » pour les ouvriers qui ne votent plus majoritairement à gauche comme c’était le cas auparavant et les élections se jouent de plus en plus sur des thèmes précis comme le chômage ou l’immigration.
+		Cependant, il faut tout de même remarquer que le vote ne pourra jamais être un acte tout à fait rationnel, dans la mesure où la position parfaitement rationnelle d’un point de vue utilitariste serait justement de ne pas aller voter, c’est le paradoxe du vote. Pour dépasser ce paradoxe, il est donc nécessaire de voir que le vote revêt également d’une dimension collective.</p>
+
+		</br></br>
+
+	<h2>B.	Le vote comme acte collectif</h2></br>
+
+	<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>L’expression de l’auteur « On ne vote jamais seul » peut s’expliquer par trois raisons : </br>
+			– Le vote est un acte collectif, il affirme l’appartenance de l’électeur à une communauté, la nation.</br>
+			– Le statut social : les électeurs votent en fonction du groupe social auquel ils appartiennent (vote des ouvriers, vote des femmes, vote des indépendants, vote des salariés de la fonction publique, etc.).</br> 
+			– La famille participe à la socialisation politique de ses membres. L’individu est influencé par les comportements et attitudes politiques de ses parents.</li>
+      	 <li>La famille participe à la socialisation politique des individus dès leur plus jeune âge. En effet, les enfants s’imprègnent de la culture politique de leurs parents. Ainsi, les « croyances politiques », les idées politiques, s’y forment et s’y « enracinent » : l’identification politique provient de la transmission familiale. Il existe une filiation politique : les individus votent en fonction de l’héritage politique de la famille. Ils « héritent » des comportements politiques de leur parents puisqu’en France, « 46 % [des électeurs] votent – à gauche ou à droite – comme leurs parents » et « 20 % d’électeurs […] reproduisent l’absence de choix de leurs parents ».</li>
+      	</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.11.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+      	</br></br>
+
+      	<p class="rappel"> <strong>A retenir :</br>
+		Les individus ne votent jamais complètement seul.</br>
+		En effet, ils sont influencés par leur socialisation politique (via leur famille ou leur milieu social en général) pendant laquelle ils ont intériorisés des normes, des valeurs et des comportements politiques.</br>
+		On observe ainsi que 46 % des électeur reproduisent l’orientation politique de leur parent, et ce chiffre monte à 66 % (soit les deux tiers) quand on ajoute le fait de s’abstenir comme ses parents.</strong></br></br>
+
+		<strong><em>Remarque :</strong></br>
+		Les variables qui font changer le vote sont ce que l’on appelle des variables lourdes du vote</br>
+		Ces variables lourdes qui peuvent influencer le vote, ça va donc être l’âge, le niveau de revenu ; et la religion, ça c’est ce qu’on va voir dans le document 12. Et d’autre part la catégorie socio-professionnelle et le niveau de diplôme et c’est ce qu’on va voir dans le document 13.</em></p>
+
+		</br></br>
+
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>Au premier tour des élections présidentielles de 2017, 43 % des personnes disant s’en sortir très difficilement avec les revenus de leur ménage déclarent avoir voté pour Marine Le Pen. D’après un sondage Ipsos réalisé en 2017.</li>
+      	 <li>La majorité des catholiques pratiquant de façon régulière (51 %) a voté pour François Fillon.</li>
+      	 <li>Les électeurs les plus jeunes sont plutôt attirés par l’extrême gauche et rejettent la droite conservatrice, traditionnelle, c’est là qu’on observe les plus gros écarts avec les résultats totaux. Ainsi 30 % des électeurs entre 18 et 24 ans disent avoir voté pour Jean-Luc Mélenchon, alors qu’il n’a obtenu que 19,2 % des suffrages exprimés sur l’ensemble des électeurs, cela signifie donc que les plus jeunes sont sur-représentés parmi les électeurs de Jean-Luc Mélenchon. 
+		 À l’inverse, les électeurs âgés de plus de 60 ans sont plutôt attirés par les candidats de droite modérée. Pour les électeurs de plus de 70 ans, l’écart en faveur de François Fillon dépasse même les 25 points. 
+		 Ce qu’il faut tout de même remarquer, c’est que pour les autres catégories d’âge, on observe peu de différences avec la répartition de l’ensemble des suffrages exprimés, si ce n’est peut-être une surreprésentation du vote pour Marine Le Pen pour les électeurs entre 35 et 59 ans (écart allant jusqu’à 7 points pour ceux entre 35 et 49 ans).
+		 Pour résumer on peut dire que pour l’âge, les plus jeunes votent davantage à gauche et les plus âgés votent davantage pour la droite conservatrice. Les pratiquant catholiques votent massivement pour la droite conservatrice et très peu pour les extrêmes alors que les sans religions votent très peu pour la droite conservatrice et davantage pour la gauche. Et pour finir on peut constater que le niveau de revenu joue principalement sur le vote sur les extrêmes car plus les ménages déclarent avoir des difficultés financières, plus ils votent pour l’extrême gauche ou l’extrême droite, mais cela est particulièrement frappant pour le front national avec 43% des suffrages soit un écart de 21 points. Et à l’inverse plus le revenu est élevé, plus le vote pour les partis libéraux économiquement augmentent.</li>
+		</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.12.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+		</br></br>
+
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>46 % des suffrages exprimés par les cadres supérieurs se sont portés sur des partis de gauche  (dont DVG). En France, au premier tour des élections régionales de 2015, 32,3 % des suffrages exprimés se sont portés sur des partis de droite (dont DVD et UPR).</li>
+      	 <li>D’une part, la profession ou le groupe socioprofessionnel influencent le vote des électeurs. En effet, on constate que les cadres supérieurs votent plus souvent à gauche que les autres professions : au premier tour des élections régionales de 2015, 46 % des suffrages exprimés par les cadres supérieurs se sont portés sur des partis de gauche, soit 20 points de pourcentage de plus que la proportion de suffrages exprimés par les agriculteurs, artisans, chefs d’entreprise pour ces mêmes partis. Les ouvriers, eux,  votent moins à droite que les autres professions citées dans ce document : 23 % de leurs suffrages exprimés au premier tour des élections régionales de 2015 ont été en faveur de partis de droite, contre 36 % des suffrages exprimés par les agriculteurs, artisans et chefs d’entreprise et 35% pour les cadres. Cependant, le vote d’extrême droite (FN) est plus fréquent chez les ouvriers : 43 % de leurs suffrages exprimés l’ont été en faveur du FN, soit une proportion 2,5 fois supérieure à celle des cadres supérieurs puisque seulement 17 % des suffrages exprimés par ces derniers l’ont été en faveur du FN.</br> 
+		 D’autre part, le niveau de diplôme est également une variable explicative du vote des électeurs. Plus les électeurs sont diplômés, plus leurs suffrages se portent sur des partis de gauche : ainsi au premier tour des élections régionales de 2015, 44 % des suffrages exprimés par des électeurs ayant un niveau de diplôme supérieur ou égal à bac +3 ont été en faveur des partis de gauche, soit 11 points de pourcentage de plus que la proportion constatée pour les électeurs ayant un niveau de diplôme inférieur au bac. Néanmoins attention, on constatera qu’ils votent également plus à droite que la moyenne : 39 % des suffrages exprimés par les diplômés à bac +3 et plus vont aux partis de droite, soit 6,7 points de plus que l’ensemble des suffrages exprimés et 11 points de pourcentage de plus que la part de suffrages exprimés pour la droite par les électeurs ayant un diplôme inférieur au bac. 
+		 Ce qu’on peut donc en conclure, c’est que la différence va surtout se faire dans l’opposition entre les parti traditionnels et les parti extrêmes contestataires comme le front national. On peut constater que les électeurs très diplômés votent davantage pour les partis traditionnels, de gouvernement, que les électeurs peu diplômés. Par ailleurs, moins les électeurs sont diplômés, plus leurs suffrages s’expriment en faveur du FN : 36 % des suffrages exprimés par les électeurs ayant un diplôme inférieur au bac vont au FN ; c’est une proportion 2,5 fois supérieure à celle constatée pour les électeurs ayant un niveau de diplôme égal ou supérieur à bac +3.</li>
+		</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.13.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+		</br></br>
+
+				<p class="rappel"> <strong>A retenir :</br>
+		Le comportement de vote des individus est influencé par des variables lourdes qui sont prédictives de certaines attitudes.</br>
+		En effet, le vote des individus est souvent conditionné par le groupe auquel ils appartiennent, ces différents groupes qui forment les variable lourdes du vote sont l’âge, la religion, le niveau de revenu, la catégorie socio-professionnelle et le niveau de diplôme.</br>
+		A titre d’exemples on peut donc voir des régularités suivant ces différentes variables :</br>
+		- Age : Les jeunes votent plus à gauche et les plus de 70 ans davantage à droite.</br>
+		- Religion :  Être catholique pratiquant est une variable fortement prédictive d’un vote à droite.</br> 
+		- PCS : les cadres votent plus à gauche que les autres, les ouvriers votent moins à droite que les autres. En revanche les ouvriers sont ceux qui vote le plus pour le FN (43 %)</br>
+		- Diplôme/Revenu : on remarque que pour ces deux variables, avoir des difficultés financières ou un niveau de diplôme inférieur au bac sont deux variables très fortement prédictives du vote FN (36 % et 43 %)</strong></br></p>
+
+		</br></br>
+
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>Le sexe et l’appartenance au groupe socioprofessionnel « ouvrier » ne sont plus des variables sociales pertinentes.</li>
+      	 <li>La fin du « vote de classe » ouvrier peut s’expliquer par un éclatement de ce groupe socioprofessionnel, qui se compose de situations très différentes depuis les années 1970.</li>
+      	 <li>Le fait de disposer d’un patrimoine élevé (et particulièrement « à risques »), d’être catholique pratiquant ou d’exercer une profession indépendante augmente les chances de voter à droite ; le fait d’exercer un métier dans le secteur public augmente les chances de voter à gauche.</li>
+      	 <li>Le « vote de classe » se recompose plus qu’il ne disparaît puisqu’il est remplacé par des variables liées à la classe sociale (le patrimoine, l’appartenance au secteur public, ou le fait d’être indépendant).</li>
+      	</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.14.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+      	</br></br>
+
+		 <p class="synthèse"><strong>Synthèse : II. B. Le vote comme acte collectif</strong></br>
+		 Le vote n’est pas uniquement un acte individuel, c’est également un acte collectif. En effet, lors de la socialisation notre milieu social nous transmet des valeurs qui vont influencer notre identification politique de manière durable. Les études montrent ainsi que 46 % des individus votent à droite ou à gauche comme leur parent, et ce chiffre monte à 66 % si l’on ajoute l’abstention et les électeurs qui reproduisent la même absence de choix que leurs parents.</br>
+	 	 Les politistes ont donc mis au point des modèle qui peuvent dans une certaine mesure prédire le vote des électeurs en fonction de leur variables sociales (sexe, âge, niveau de diplôme, catégorie socio-professionnelle, religion etc.). En effet, ces variables structurent l’identification politique et les préférences partisanes des individus, ce qui influence leur vote. On peut par exemple remarquer que le vote pour la droite traditionnelle est 5 fois plus élevé chez les plus de 70 ans que chez les moins de 25 ans, et 7,3 fois plus élevés pour les catholiques pratiquant que pour les « sans religions ».</br>
+		 Cependant, on assiste à une recomposition de ces variables explicative du vote. De fait, certaines variables qui ont pendant longtemps été associées à un type de vote ont vu leur significativité s’affaiblir au profit de nouvelles distinctions. On peut prendre l’exemple du groupe des ouvriers qui a pendant longtemps voté très à gauche et dont 43% des membres ont voté pour le Front National aux élections régionales de 2015. Par ailleurs être indépendant ou richement doté en patrimoine est aujourd’hui prédictif d’un vote à droite, alors qu’être salarié du public est prédictif d’un vote à gauche.</p>
+
+		 </br></br>
+
+	<h2>C.	Comment expliquer la volatilité du vote ?</h2>
+		 </br>
+
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>Les modèles fondés sur les variables sociales sont critiqués car ils n’expliquent pas le changement de vote des électeurs entr deux scrutins. En effet, si on estime qu’un individu qui appartient à telle catégorie sociale ou tel groupe religieux à plus de chance de voter pour un parti en particulier, cela ne permet pas de comprendre pourquoi il change de pratique de vote.</li>
+      	 <li>Le vote dépend avant tout du contexte électoral car les électeurs vont voter pour un candidat qui réponds à des enjeux jugés prioritaires pour eux, ils seront susceptibles de changer leurs votes entre deux élections en fonction des enjeux. Par exemple pour les élections françaises qui se tiendront en 2022, les électeurs vont très probablement porter une grande attention aux propositions des candidats sur les questions sanitaires. Le vote dépend également de l’offre électorale car si un électeur ne trouve pas de candidats qui répondent à ses intérêts il peut s’abstenir de voter pour cette élection, ou opter pour un vote contestataire (souvent aux extrêmes).</li>
+		 <li>La phrase soulignée signifie que les électeurs modernes sont désormais plus instruits et ont un meilleur accès aux informations, ce qui leur permet de voter pour le candidat qui répondra au mieux à leurs intérêts. Ainsi l’électeur va choisir son candidat en fonction de son intérêt personnel et de moins en moins en fonction des identités partisanes (ils votent moins « comme tout le monde » dans leur groupe social).</li>
+      	 <li>Le « vote sur enjeu » permet d’expliquer la volatilité électorale puisque, selon ce modèle, les électeurs peuvent modifier leur vote en fonction des réponses que l’offre électorale apporte aux enjeux d’une élection donnée. Si en 2012 les questions prioritaires étaient l’insécurité et le chômage, l’élection de 2022 sera surement portée sur des améliorations dans le domaine sanitaire et la reprise économique.</li>
+      	</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.15.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+      	</br></br>
+
+      	<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>D’après Ipsos, en France en 2017, 77 % des ouvriers interrogés estiment que « les notions de droite et de gauche sont dépassées ».</li>
+      	 <li>On peut parler d’un affaiblissement du clivage gauche/droite puisque les interviewés estiment majoritairement qu’il est dépassé, et ce quel que soit leur groupe socioprofessionnel (c’est le cas de 71 % des personnes interrogées au total).</li>
+		 <li>L’affaiblissement du clivage gauche/droite peut expliquer celui du « vote de classe », notamment en ce qui concerne les ouvriers, qui sont très majoritaires à penser que ce clivage est dépassé (77%) : cela peut expliquer l’érosion de leur vote à gauche.</li>
+      	 <li>Cet affaiblissement permet d’expliquer la volatilité électorale puisque, si les électeurs s’identifient moins à un bord politique (gauche ou droite), ils auront moins de difficultés à changer de préférence électorale entre deux scrutins.</li>
+      	</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.16.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+      	</br>
+
+		<p class="rappel"><strong>A retenir :</br>
+		On observe ces dernières décennie une augmentation de la volatilité électorale : les électeurs passent du vote à l’abstention ou changent de parti entre deux scrutins.</br>
+		Cela s’explique tout d’abord par des transformations qui affaiblissent le poids des variables sociales (sexe, âge, catégorie sociale, diplôme). Le « vote de classe » a considérablement diminué et le clivage gauche/droite est perçu comme moins pertinent par les électeurs.</br>
+		Par conséquent, les électeurs prennent moins leurs décisions en fonction de leur identité politique qu’en fonction de variables contextuelles, c’est ce qu’on appelle le vote sur enjeux et cela explique que les électeurs changent leur vote en fonction de l’enjeu de chaque élection.</strong></p>
+
+		</br>
+
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+         <li>D’après Ipsos, 64 % des électeurs ayant voté pour J.-L. Mélenchon lors du premier tour des présidentielles françaises de 2012 ont voté pour ce même candidat en 2017.</li>
+      	 <li>4 % des électeurs qui avaient voté pour N. Sarkozy au premier tour des présidentielles de 2012 ont voté à gauche en 2017 (il faut additionner les votes pour Benoit Hammon et les vote pour Jean-Luc Mélenchon).</li>
+		 <li>On a vu que seulement 4% des électeurs ayant voté pour Nicolas Sarkozy en 2012 ont voté pour la gauche en 2017, et c'est le cas pour 3% de ceux qui avaient voté pour Marine Lepen. De l'autre côté, on voit que seulement 2% de ceux qui avaient voté pour J-L. Mélenchon en 2012 on voté pour un candidat de droite en 2017, et ce chiffre monte à 7% pour ceux qui avaient voter Hollande. Dans tous les cas, on voit que la volatilité électorale entre gauche et droite est très faible.</li>
+      	 <li>Cela permet de relativiser la critique des variables sociales du vote, car on leur reproche de ne pas expliquer une volatilité électorale entre gauche et droite qui s’avère finalement très faible. On voit d’après ce document que la vraie volatilité est plutôt avec l’abstention qu’entre la droite et la gauche.</li>
+      	</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.17.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+
+      	</br></br>
+
+
+		<p class="dessous"><strong><em>Aller plus loin :</em></strong></p>
+		<p class="dessous">
+
+		<div id="conteneur">
+		<div class="questions">
+		<ul>
+ 		 <li>Les électeurs dont les préférences entre gauche et droite sont les plus stables sont ceux qui possèdent le plus fort intérêt et la plus forte compétence politiques.</li>
+      	 <li>Les électeurs pratiquant une volatilité électorale entre gauche et droite ne se caractérisent pas tant par des choix stratégiques que par leur faible intérêt et leur faible compétence politiques.</li>
+		 <li>La volatilité électorale entre gauche et droite ne s’explique donc pas uniquement par des variables contextuelles, puisque certaines variables sociales (le diplôme notamment) sont plus favorables à ce type de changement de préférence.</li>
+		</ul></div>
+	    <div class="imagedoc">
+	    <img src="{{ url_for('static', filename='images/doc.18.jpg') }}" class="imageflottante" alt="Image flottante"/> </div>
+		</div></div>
+
+		</br></br>
+
+		 <p class="synthèse"><strong>Synthèse II.C. Comment expliquer la volatilité du vote ?</strong></br>
+		 Depuis les années 1970, la volatilité électorale a augmenté. D’une élection à une autre, les électeurs peuvent voter pour des partis différents, bien que ces derniers appartiennent généralement au même champ politique (seulement 4% des électeurs qui avaient voté pour N. Sarkozy au premier tour des présidentielles de 2012 ont voté à gauche en 2017). Ils peuvent aussi choisir de s’abstenir, alors qu’ils avaient voté aux élections précédentes. L’abstention intermittente est la forme de volatilité électorale la plus fréquente (entre 13% et 20% selon les partis).</br>
+		 L’augmentation de la volatilité électorale peut être expliquée par une baisse de l’influence des variables sociales. L’identité des individus est plus complexe qu’auparavant car ils appartiennent à plusieurs groupes sociaux en même temps qui ne vont pas toujours dans le même sens. On assiste ainsi à une recomposition des variables explicatives du vote qui peuvent apporter du changement.</br>
+		 Les changements du comportement électoral peuvent aussi être liés à l’influence croissante des variables contextuelles. Les électeurs feraient plus attention aux promesses des partis politiques, aux médias et à la situation économique et sociale avant de choisir pour qui voter. Ce choix peut changer si l’offre électorale change, c’est le propre du vote sur enjeu.</p>
+		</br></br></br>
+
+	</section>
+
+	</p>
+{% endblock %}

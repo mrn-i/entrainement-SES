@@ -1,10 +1,7 @@
-
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS_ch7.css') }}">
-
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS_ch7.css') }}">
 {% block body %}
-
-<img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13274947932468.jpg" class="imagelogo" alt="image logo"/></a>
-<h1 style="margin-left: 270px; text-align: center;">Chapitre 7 - Comment un marché concurrentiel fonctionne-t-il ?</h1>
+	<img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13274947932468.jpg" class="imagelogo" alt="image logo"/></a>
+    <h1 style="margin-left: 270px; text-align: center;">Chapitre 7 - Comment un marché concurrentiel fonctionne-t-il ?</h1>
 
 	
 
@@ -57,26 +54,26 @@
 		<h3><em>Supports en vidéos:</em></h3>
 		<p class="tA">Deux vidéos du vidéaste Monsieur Phi, qui revient sur la notion de coordination marchande. Il s'appuie notamment sur un texte d'Adam Smith (l'un des tout premier économiste) et il montre d'une façon amusante et intéressante en quoi la coopération marchande et la division du travail fait partie intégrante de notre société :</p>
 		<p style="margin-left: 0px;">ADAM SMITH (1/2) - Le paradoxe de la veste de laine</br>
-		<a href="https://youtu.be/azNw7Vx1R8o" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="images/smith1.jpg" class="imagevideo3" alt="image vidéo"/></a></p>
+		<a href="https://youtu.be/azNw7Vx1R8o" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/smith1.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 		<p style="margin-left: 0px;">ADAM SMITH (2/2) - DIVISION DU TRAVAIL & MAIN INVISIBLE</br>
-		<a href="https://youtu.be/ZYlu7xxQogA" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="images/smith2.jpg" class="imagevideo3" alt="image vidéo"/></a></p></br>
+		<a href="https://youtu.be/ZYlu7xxQogA" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/smith2.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p></br>
 		<p class="tA">Vidéos de la chaîne "Les SES en vidéo" :</p>
 		<p style="margin-left: 0px;">Qu'est-ce qu'un marché ?</br>
-		<a href="https://youtu.be/PnArmtHPPAI" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="images/QQmarché.jpg" class="imagevideo3" alt="image vidéo"/></a></p>
+		<a href="https://youtu.be/PnArmtHPPAI" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/QQmarché.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 		<p style="margin-left: 0px;">Comment s'ajustent les prix sur un marché ?</br>
-		<a href="https://youtu.be/yw7OM49WRHw" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="images/ajuster.jpg" class="imagevideo3" alt="image vidéo"/></a></p>
+		<a href="https://youtu.be/yw7OM49WRHw" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/ajuster.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 		<p style="margin-left: 0px;">Quels sont les effets de la mise en place d'une taxe ou d'une subvention ?</br>
-		<a href="https://youtu.be/fh4CxaRVfEA" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="images/taxesubv.jpg" class="imagevideo3" alt="image vidéo"/></a></p>
+		<a href="https://youtu.be/fh4CxaRVfEA" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/taxesubv.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 		<p style="margin-left: 0px;">Les mécanismes de marché.</br>
-		<a href="https://youtu.be/2AzW-4ZLJ94" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="images/mécanisme.jpg" class="imagevideo3" alt="image vidéo"/></a></p>
+		<a href="https://youtu.be/2AzW-4ZLJ94" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/mécanisme.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 		<p style="margin-left: 0px;">Surlpus et gain à l'échange</br>
-		<a href="https://youtu.be/XSxIg7ZystY" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="images/surplus.jpg" class="imagevideo3" alt="image vidéo"/></a></p>
+		<a href="https://youtu.be/XSxIg7ZystY" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/surplus.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 
 </nav>
 
 <section>
 
-	<p><strong>Programme officiel - Objectifs d'apprentissage :</strong></br>
+	<p class="programme"><strong>Programme officiel - Objectifs d'apprentissage :</strong></br>
 	- Savoir que le marché est une institution et savoir distinguer les marchés selon leur degré de concurrence (de la concurrence parfaite au monopole).</br>
 	- Savoir interpréter des courbes d'offre et de demande ainsi que leurs pentes, et comprendre comment leur confrontation détermine l'équilibre sur un marché de type concurrentiel où les agents sont preneurs de prix.</br>
 	- Savoir illustrer et interpréter les déplacements des courbes et sur les courbes, par différents exemples chiffrés, notamment celui de la mise en œuvre d'une taxe forfaitaire.</br>
@@ -96,8 +93,8 @@
 	</thead>
 	<tbody>
 	   <tr>
-	     <td><a href="https://youtu.be/PJeV3ecxL9E" onclick="window.open(this.href); return false;"><img src="images/IA.jpg" class="imagevideo" alt="image vidéo"/></a></td>
-	     <td><a href="https://youtu.be/z8DXoV4IKbg?t=16" onclick="window.open(this.href); return false;"><img src="images/IB.jpg" class="imagevideo" alt="image vidéo"/></a></td>
+	     <td><a href="https://youtu.be/PleBzRMoVgA" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/IA.jpg') }}" class="imagevideo') }}" alt="image vidéo"/></a></td>
+	     <td><a href="https://youtu.be/DnI-hXSpJBE" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/IB.jpg') }}" class="imagevideo') }}" alt="image vidéo"/></a></td>
 	     </tr>
 	</tbody>
 	</table>
@@ -106,7 +103,7 @@
      <h1>Introduction : La coordination marchande.</h1>
 
      <p>
-     <a href="https://youtu.be/47lazI9h_SE" onclick="window.open(this.href); return false;"><img src="images/milton.jpg"  class="imageflottante2" alt="Image flottante" /></a>
+     <a href="https://youtu.be/47lazI9h_SE" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/milton.jpg') }}"  class="imageflottante2" alt="Image flottante" /></a>
      Le marché c’est une notion fondamentale de l’économie parce que c’est sur les marchés que se déroulent les échanges de bien et de service. En d’autres termes, s’il n’y avait pas de marché, il n’y aurait pas de commerce. Or, le commerce est précisément la chose qui fait la particularité des sociétés humaines.</br>
 	 Si on imaginait une société sans marché, il faudrait que chacun se fabrique ses propres vêtements, chasse sa propre nourriture, autrement dit on passerait tout notre temps à essayer de survivre. Le marché c’est donc notamment ce qui permet la division du travail. Par exemple moi je peux me contenter d’être uniquement un professeur car ma production me permet de gagner un revenu avec lequel je vais pouvoir aller sur un marché pour acheter des productions qui ont été faites par d’autres personnes qui se sont spécialisées dans d’autres domaines.</br>
 	 Ce qu’il faut bien voir, c’est qu’aujourd’hui les sociétés humaines se sont tellement développées grâce aux échanges marchands que la plupart des objets qui nous entourent sont le résultat de très nombreux échanges marchands, et en fait si on était tout seul, on serait parfaitement incapable de produire ne serait-ce qu’un seul objet, même s’il nous paraît simple. A ce propos je vous mets un vers une petite vidéo de l’économiste Milton Friedman qui parle précisément de la complexité qui se cache derrière un crayon.</br>
@@ -133,9 +130,10 @@
 
 		<h3>2. La diversité des marchés</h3>
 
-		<p class="document"> <strong>Document 1 - Le marché est un lieu d'échange.</strong></br>
-		La notion de marché a des racines très concrètes : au départ, c'est un lieu physique où des acheteurs rencontrent des personnes qui ont des produits, des biens ou des services à proposer. C'est le lieu où l'on négocie le prix et où les échanges se font. Si quelqu'un veut me vendre un produit en me proposant un prix exorbitant, je peux aller voir son voisin et lui demander un meilleur prix pour le même objet. Inversement, le producteur n'est pas l'otage de l'acheteur : il peut attendre qu'un autre se présente. Un glissement s'est ensuite opéré depuis ce lieu physique pour désigner, d'une part, des marchés plus dématérialisés […] et, d'autre part, un concept économique, celui de l'équilibre de l'offre et de la demande par l'ajustement des prix. […] Il faut bien souligner qu'au départ du marché, il y a deux entités aux intérêts divergents : l'acheteur veut acheter bon marché et le vendeur veut vendre cher. Ils vont converger vers un prix qui rend possible la transaction car chacun voit qu'il ne peut trouver mieux : le prix d'équilibre.</br> 
-		A. Landier, <em>B.A BA de l'économie contemporaine</em>, Ed. Le Pommier, 2013</p>
+		<article class="document"> <strong>Document 1 - Le marché est un lieu d'échange.</strong></br>
+		La notion de marché a des racines très concrètes : au départ, c'est un lieu physique où des acheteurs rencontrent des personnes qui ont des produits, des biens ou des services à proposer. C'est le lieu où l'on négocie le prix et où les échanges se font. Si quelqu'un veut me vendre un produit en me proposant un prix exorbitant, je peux aller voir son voisin et lui demander un meilleur prix pour le même objet. Inversement, le producteur n'est pas l'otage de l'acheteur : il peut attendre qu'un autre se présente. Un glissement s'est ensuite opéré depuis ce lieu physique pour désigner, d'une part, des marchés plus dématérialisés […] et, d'autre part, un concept économique, celui de l'équilibre de l'offre et de la demande par l'ajustement des prix. […] Il faut bien souligner qu'au départ du marché, il y a deux entités aux intérêts divergents : l'acheteur veut acheter bon marché et le vendeur veut vendre cher. Ils vont converger vers un prix qui rend possible la transaction car chacun voit qu'il ne peut trouver mieux : le prix d'équilibre. 
+		<p style="text-align: right;">A. Landier, <em>B.A BA de l'économie contemporaine</em>, Ed. Le Pommier, 2013</p>
+		</article>
 
 		<p><strong>A retenir</strong></p>
 		<p class="définition">
@@ -148,7 +146,7 @@
 
 		<h3>3. Le marché s’appuie sur des institutions pour fonctionner correctement</h3>
 		<p><center>Vidéo Dessine-moi l'éco : Pas d'économie sans confiance !</br>
-		<a href="https://youtu.be/AO6171YCx-Q" onclick="window.open(this.href); return false;"><img src="images/confiance.jpg" class="imagevideo2" alt="image vidéo2"/></a></center></p>
+		<a href="https://youtu.be/AO6171YCx-Q" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/confiance.jpg') }}" class="imagevideo2" alt="image vidéo2"/></a></center></p>
 		<p>Sur un marché, la confiance est indispensable sans quoi les offreurs et les demandeurs refuseraient d’échanger et donc il n’y aurait pas de commerce. Si l’on échange avec des personnes que l’on connaît, la confiance personnelle peut suffire, mais comme les échanges se font souvent avec des personnes que l’on ne connaît pas, des institutions marchande sont là pour garantir le degré de confiance nécessaire aux échanges.</p>
 		<p class="définition">
 		<strong>Définition:</strong></br>
@@ -190,7 +188,7 @@
 
 		<h3>2. Des structures de marché diverse</h3>
 		<p><center>Vidéo de la cité de l'économie : La concurrence</br>
-		<a href="https://youtu.be/ZYkbXe_lmBo" onclick="window.open(this.href); return false;"><img src="images/concurrence.jpg" class="imagevideo2" alt="image vidéo2"/></a></center></p>
+		<a href="https://youtu.be/ZYkbXe_lmBo" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/concurrence.jpg') }}" class="imagevideo2" alt="image vidéo2"/></a></center></p>
 
 		<h4>a) Monopole, oligopole et concurrence</h4>
 		<p class="définition">
@@ -253,5 +251,4 @@
     </p>
 
 </section>
-
 {% endblock %}

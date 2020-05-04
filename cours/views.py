@@ -28,9 +28,12 @@ def index():
 def about():
     return render_template("about.html")
 
+@app.route("/cours_ch6")
+def ch6():
+    return render_template("Chapitre 6.html")
+
 @app.route("/cours_ch7")
 def ch7():
     return render_template("Chapitre 7.html")
-
 
 
