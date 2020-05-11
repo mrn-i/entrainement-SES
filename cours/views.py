@@ -36,4 +36,8 @@ def ch6():
 def ch7():
     return render_template("Chapitre 7.html")
 
+@app.route("/seconde_cours_ch3")
+def seconde_ch3():
+    return render_template("2de Chapitre 3.html")
+
 

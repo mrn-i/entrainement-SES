@@ -1,11 +1,12 @@
+{% extends 'layout.html' %}
+
 {% block body %}
- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS_ch7.css') }}">
    <img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13274947932468.jpg" class="imagelogo" alt="image logo"/></a>
    <h1 style="margin-left: 270px; text-align: center;">Chapitre 6 – Voter : Une affaire individuelle ou collective ?</h1>
 
 	
 
-<nav class="dessous">
+<div class="navo">
 		<h3> Plan du cours</h3>
 
       	<p class="tA">Programme officiel</p>
@@ -37,7 +38,7 @@
 		<h3><em>Pour réviser :</em></h3></br>
 		<p>Vidéo Bilan Lelivrescolaire.fr</p>
 		<a href="https://youtu.be/gGCUltz0Ljg" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/bilan.jpg') }}" class="imagevideo3" alt="image vidéo"/></a>
-</nav>
+</div>
 
 <section>
 

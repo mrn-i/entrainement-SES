@@ -1,51 +1,56 @@
- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='CSS_ch7.css') }}">
+{% extends 'layout.html' %}
+
 {% block body %}
+    <body>
 	<img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13274947932468.jpg" class="imagelogo" alt="image logo"/></a>
     <h1 style="margin-left: 270px; text-align: center;">Chapitre 7 - Comment un marché concurrentiel fonctionne-t-il ?</h1>
 
 	
 
-<nav class="dessous">
+<div class="navo">
       	<h3> Plan du cours</h3>
       	<p class="tA">Programme officiel</p>
-      	<p class="tA">Vidéos du cours</p>
-        <p class="tI">Introduction : La coordination marchande</p>
-		<p class="tI">I. Qu’est-ce qu’un marché concurrentiel ?</p>
+      	<p class="tA">Vidéos du cours</p></br>
+        <p class="tI">Introduction : La coordination marchande</p></br>
+		<p class="tI">I. Qu’est-ce qu’un marché concurrentiel ?</p></br>
 		<p class="tA">A – Le marché est un lieu d'échange où se déterminent un prix et une quantité d’échange</p>
 		<p class="t1">1. Notions à connaître</p>
 		<p class="t1">2. Un lieu de rencontre entre une offre et une demande</p>
-		<p class="t1">3. Le marché s’appuie sur des institutions pour fonctionner correctement</p>
+		<p class="t1">3. Le marché s’appuie sur des institutions pour fonctionner correctement</p></br>
 		<p class="tA">B – Les marchés peuvent être plus ou moins concurrentiels</p>
 		<p class="t1">1. Découverte des structures de marché</p>
 		<p class="t1">2. Des structures de marché diverses</p>
 		<p class="ta">a) Monopole, oligopole et concurrence</p>
 		<p class="ta">b) La concurrence pure et parfaite ?</p>
-		<p class="ta">c) La concurrence n’est pas toujours la situation optimale</p></br>
+		<p class="ta">c) La concurrence n’est pas toujours la situation optimale</p></br></br>
 
-		<p class="tI">II. Comment se fixent et se modifient les prix sur un marché concurrentiel ?</p>
-		<p class="tA">A – La loi de la demande</p>
-		<p class="t1">1. La demande et ses déterminants</p>
-		<p class="t1">2. La courbe de demande</p>
-		<p class="t1">3. Les chocs de demande</p>
-		<p class="tA">B – La loi de l’offre</p>
-		<p class="t1">1. L’offre et ses déterminant</p>
-		<p class="t1">2. La courbe d’Offre</p>
-		<p class="t1">3. Les chocs d’offre</p>
-		<p class="tA">C – Comment le marché parvient-il à s’équilibrer ?</p>
-		<p class="t1">1. La confrontation de l’offre et de la demande fait apparaître un prix et une quantité d’équilibre</p>
-		<p class="t1">2. Les lois de l’offre et de la demande sont des mécanismes autorégulateurs qui ramènent le marché à l’équilibre grâce à la flexibilité des prix</p>
-		<p class="t1">3. En cas de choc d’offre ou de demande, l’équilibre du marché peut être modifié.</p></br>
+		<p class="tI">II. Comment se fixent et se modifient les prix sur un marché concurrentiel ?</p></br>
+		<p class="tA">A – Les lois de l’offre et de la demande</p>
+		<p class="t1">1.	La demande et ses déterminants</p>
+		<p class="t1">2.	La courbe de demande de marché</p>
+		<p class="t1">3.	L’offre et ses déterminant</p>
+		<p class="t1">4.	La courbe d’offre de marché</p></br>
+		<p class="tA">B – L’équilibre du marché</p>
+		<p class="t1">1.	Qu’est-ce que l’équilibre du marché ?</p>
+		<p class="t1">2.	Comment trouver graphiquement l’équilibre du marché ?</p></br>
+		<p class="tA">C – Les variations de l’Offre et de la demande</p>
+		<p class="t1">1.	Interpréter les pentes des courbes d’offre et de Demande</p>
+		<p class="t1">2.	Interpréter les chocs d’offre et de demande</p></br>
+		<p class="tA">D – Comment le marché parvient-il à s’équilibrer ?</p>
+		<p class="t1">1.	Les lois de l’offre et de la demande sont des mécanismes autorégulateurs qui ramènent le marché à l’équilibre grâce à la flexibilité des prix</p>
+		<p class="t1">2.	En cas de choc d’offre ou de demande, l’équilibre du marché peut être modifié.</p></br></br>
 
-		<p class="tI">III. Comment un producteur choisit-il son volume de production ?</p>
+
+		<p class="tI">III. Comment un producteur choisit-il son volume de production ?</p></br>
 		<p class="tA">A – Les coûts de production</p>
 		<p class="t1">1.Quels sont les différents coûts de production ?</p>
 		<p class="t1">2.Comment évolue le coût marginal ?</p>
-		<p class="tA">B – Les recettes du producteur</p>
-		<p class="tA">C – Le choix du volume de production</p></br>
+		<p class="tA">B – Les recettes du producteur</p></br>
+		<p class="tA">C – Le choix du volume de production</p></br></br>
 
-		<p class="tI">IV. Pourquoi le marché est-il un optimum ?</p>
-		<p class="tA">A – Le surplus sert à mesurer les gains à l’échange</p>
-		<p class="tA">B – Le surplus total est maximal quand le marché est à l’équilibre</p>
+		<p class="tI">IV. Pourquoi le marché est-il un optimum ?</p></br>
+		<p class="tA">A – Le surplus sert à mesurer les gains à l’échange</p></br>
+		<p class="tA">B – Le surplus total est maximal quand le marché est à l’équilibre</p></br>
 		<p class="tA">C – Quels sont les effets d’une taxe sur le surplus total ?</p>
 		</br></br>
 		
@@ -68,8 +73,18 @@
 		<a href="https://youtu.be/2AzW-4ZLJ94" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/mécanisme.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 		<p style="margin-left: 0px;">Surlpus et gain à l'échange</br>
 		<a href="https://youtu.be/XSxIg7ZystY" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/surplus.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
+		<p class="tA">Vidéos de la chaîne "Les bons profs" :</p>
+		<p style="margin-left: 0px;">Comment l'offre et la demande se forment-elles sur un marché ?</br>
+		<a href="https://youtu.be/JtZPcfXygMM" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/formofde.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
+		<p style="margin-left: 0px;">Comment l'offre et la demande se rencontrent-elles ?</br>
+		<a href="https://youtu.be/z04zmWn-XOc" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/rencofde.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
+		<p class="tA">Vidéos Diverses :</p>
+		<p style="margin-left: 0px;">GOOGLE : La prune à 1.5 milliard d'euros - Stupid Economics</br>
+		<a href="https://youtu.be/GQK5hDXxB0I" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/google.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
+		<p style="margin-left: 0px;">Comment un marché concurrentiel fonctionne‑t‑il ?</br>
+		<a href="https://youtu.be/qL-3N37LUPA" style="max-width: 100px;" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/bilanmarché.jpg') }}" class="imagevideo3" alt="image vidéo"/></a></p>
 
-</nav>
+</div>
 
 <section>
 
@@ -89,13 +104,25 @@
 	   <tr>
 	     <th><em>Vidéo 1</em></th>
 	     <th><em>Vidéo 2</em></th>
-	    </tr>
+	     <th><em>Vidéo 3</em></th>
+	   </tr>
 	</thead>
 	<tbody>
 	   <tr>
-	     <td><a href="https://youtu.be/PleBzRMoVgA" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/IA.jpg') }}" class="imagevideo') }}" alt="image vidéo"/></a></td>
-	     <td><a href="https://youtu.be/DnI-hXSpJBE" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/IB.jpg') }}" class="imagevideo') }}" alt="image vidéo"/></a></td>
-	     </tr>
+	     <td><a href="https://youtu.be/PleBzRMoVgA" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/IA.jpg') }}" class="imagevideo" alt="image vidéo"/></a></td>
+	     <td><a href="https://youtu.be/DnI-hXSpJBE" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/IB.jpg') }}" class="imagevideo" alt="image vidéo"/></a></td>
+	     <td><a href="https://youtu.be/sE95IyORa0o" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/II.A.lois.jpg') }}" class="imagevideo" alt="image vidéo"/></a></td>
+	   </tr>
+	</tbody>
+	<thead>
+	   <tr>
+	     <th><em>Vidéo 4</em></th>
+	   </tr>
+	</thead>
+	<tbody>
+	   <tr>
+	     <td><a href="https://youtu.be/ItZC_lBhAJc" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/II.B.équilibre.jpg') }}" class="imagevideo" alt="image vidéo"/></a></td>
+	   </tr>
 	</tbody>
 	</table>
 
@@ -103,10 +130,10 @@
      <h1>Introduction : La coordination marchande.</h1>
 
      <p>
-     <a href="https://youtu.be/47lazI9h_SE" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/milton.jpg') }}"  class="imageflottante2" alt="Image flottante" /></a>
+     <a href="https://youtu.be/47lazI9h_SE" onclick="window.open(this.href); return false;"><img src="{{ url_for('static', filename='images/milton.jpg') }}" class="imageflottante2" alt="Image flottante" /></a>
      Le marché c’est une notion fondamentale de l’économie parce que c’est sur les marchés que se déroulent les échanges de bien et de service. En d’autres termes, s’il n’y avait pas de marché, il n’y aurait pas de commerce. Or, le commerce est précisément la chose qui fait la particularité des sociétés humaines.</br>
 	 Si on imaginait une société sans marché, il faudrait que chacun se fabrique ses propres vêtements, chasse sa propre nourriture, autrement dit on passerait tout notre temps à essayer de survivre. Le marché c’est donc notamment ce qui permet la division du travail. Par exemple moi je peux me contenter d’être uniquement un professeur car ma production me permet de gagner un revenu avec lequel je vais pouvoir aller sur un marché pour acheter des productions qui ont été faites par d’autres personnes qui se sont spécialisées dans d’autres domaines.</br>
-	 Ce qu’il faut bien voir, c’est qu’aujourd’hui les sociétés humaines se sont tellement développées grâce aux échanges marchands que la plupart des objets qui nous entourent sont le résultat de très nombreux échanges marchands, et en fait si on était tout seul, on serait parfaitement incapable de produire ne serait-ce qu’un seul objet, même s’il nous paraît simple. A ce propos je vous mets un vers une petite vidéo de l’économiste Milton Friedman qui parle précisément de la complexité qui se cache derrière un crayon.</br>
+	 Ce qu’il faut bien voir, c’est qu’aujourd’hui les sociétés humaines se sont tellement développées grâce aux échanges marchands que la plupart des objets qui nous entourent sont le résultat de très nombreux échanges marchands, et en fait si on était tout seul, on serait parfaitement incapable de produire ne serait-ce qu’un seul objet, même s’il nous paraît simple. A ce propos je vous mets un lien vers une petite vidéo de l’économiste Milton Friedman qui parle précisément de la complexité qui se cache derrière un crayon.</br>
 	 On voit donc que pour créer ne serait-ce qu’un crayon, on a besoin de la coopération de milliers de personnes. Et ce qu’on remarque c’est que ce sont des personnes qui ne se connaissent même pas. Cette coopération c’est justement ce qu’on va étudier dans le chapitre c’est la coopération marchande, qui repose sur l’échange marchand.</br></p>
 
 	 <p class="définition">
@@ -240,15 +267,524 @@
 		Ainsi, le brevet permet à l’entreprise qui a fait les recherches de profiter seule des retombées économiques de son produit pendant une durée limitée. Au bout d’un moment, les inventions « tombent » dans le domaine public et peuvent être utilisée par tous (c’est pour cela qu’il existe des médicaments génériques, ce sont les molécules qui sont tombées dans le domaine public).</br></br>
 		Cela montre que parfois, la situation de concurrence totale n’est pas la meilleure solution et l’autorisation de monopoles temporaires peut être nécessaire pour stimuler l’innovation.</p>
 
-		<h2>Exercice d'application :</h2>
+		<h3>Exercice d'application :</h3>
 		<p>Cliquez sur le lien suivant pour aller faire le quizz d'appropriation du cours (obligatoire et noté, n'oubliez pas d'indiquer votre nom de famille et de retenir votre code personnel)</p>
 		<p><a href="https://www.quiziniere.com/#/Exercice/X86LA3" onclick="window.open(this.href); return false;">https://www.quiziniere.com/#/Exercice/X86LA3</a></br>(ou sinon vous pouvez aussi entrer le code X86LA3 sur la page d'acceuil de la quiziniere)</p>
+
+		<p class="synthèse"><strong>Synthèse : I. Qu’est-ce qu’un marché concurrentiel ?</strong></br>
+		Les échanges marchands (à savoir la cession d'un bien ou la réalisation d'un service avec contrepartie de valeur équivalente, en général sous forme monétaire) se réalisent sur un marché, c’est-à-dire un lieu physique ou virtuel où se rencontrent une offre et une demande. Les marchés sont très divers en fonction de ce qu’on y échange (biens ou services), de leur taille (local ou international), de leur nature (physique ou virtuel), de leur fonctionnement (prix fixes ou systèmes d’enchère) etc.</br>
+		Pour pouvoir exister, les marchés s’appuient sur des institutions marchandes : c’est-à-dire l’ensemble des organes et des règles, formelles ou informelles, qui permettent et encadrent les échanges marchands.</br>
+		Tout d’abord pour pouvoir échanger il faut que l’offreur soit le propriétaire de l’objet échangé. Les droits de propriété (à savoir la possibilité donnée à son détenteur d’utiliser librement un bien, d’en percevoir une rémunération, ou de le vendre) sont donc nécessaires pour qu’aient lieu des échanges marchands. En leur absence, les particuliers ne pourraient ni vendre ni acheter il y aurait donc un frein au développement des marchés. La propriété intellectuelle (droit d’auteurs ou brevets) permet d’assurer que les agents économiques profitent des retombées économiques de leur découvertes ou de leurs innovations, ce qui les incite à produire (et donc à créer de la richesse).</br>
+		D’autres institutions permettent le bon fonctionnement du marché comme la monnaie qui facilite les échanges en permettant de convertir la valeur des biens ou des services ou l’institution juridique qui permet d’assurer le respect des contrats et du droit.
+		Les marchés existants diffèrent par leur degré de concurrence. On distingue en effet les marchés concurrentiels, du monopole (un seul offreur) ou de l’oligopole (un petit nombre d’offreurs).</br>
+		Pour étudier les marchés dits concurrentiels, les économistes utilisent des modèles et notamment celui de la concurrence pure et parfaite. Un marché en situation de concurrence pure et parfaite répond à 5 conditions : l’atomicité du marché (grand nombre d'offreurs et de demandeurs), la fluidité du marché (libre entrée et libre sortie du marché), la transparence du marché (information parfaite et gratuite pour tous les agents), l’homogénéité des produits (parfaitement identiques), et la parfaite mobilité des facteurs de production (peuvent se déplacer d'un marché à un autre). Dans ces conditions, les agents économiques n’ont aucune influence sur le marché, on dit qu’ils sont preneurs de prix. Ce modèle permet de comprendre le fonctionnement des marchés sous un certain nombre d'hypothèses. Certes, ces hypothèses sont difficilement réalisables dans la réalité, mais elles nous permettent de schématiser le fonctionnement des marchés de façon simple et accessible. Cela permet de mieux comprendre certains mécanismes à l’œuvre sur les marchés concrets.</p>
+
+
+		<h1>II. Comment se fixent et se modifient les prix sur un marché concurrentiel ?</h1>
+		<h2>A – Les lois de l’offre et de la demande</h2>
+		<h3>1.	La demande et ses déterminants</h3>
+
+		<article class="document"><strong>Document 2 : La demande et ses déterminants</strong></br>
+		[…] La quantité demandée d'un bien [exprime] la quantité que les acheteurs sont prêts à acheter [à un prix déterminé]. Prenez votre propre demande de glaces. Comment décidez-vous combien de glaces vous achetez chaque mois ; et quels sont les facteurs qui influent sur votre décision ? Voici quelques-unes des réponses que vous pourriez donner.</br>
+		<strong>Le prix.</strong> Si le prix du cornet passait à 20 dollars, vous en achèteriez moins. Vous passeriez peut-être au yaourt glacé. Si au contraire le prix tombait à 20 centimes le cornet, vous en achèteriez plus. Si la quantité demandée diminue quand le prix augmente, et augmente quand le prix baisse, on dit que la quantité demandée évolue en fonction inverse du prix. Cette fonction est valide pour la plupart des produits dans une économie. Elle est même tellement générale que les économistes la qualifient de loi de la demande: toutes choses étant égales par ailleurs, quand le prix d'un bien augmente, la quantité demandée diminue.</br>
+		<strong>Le revenu.</strong> Qu'adviendra-t-il de votre demande de glace si vous ne trouvez pas un emploi cet été? Elle diminuera très certainement. (...)</br>
+		<strong>Les prix des produits [substituables]</strong> (1). Imaginons que le prix des yaourts glacés baisse. D'après la loi de la demande vous allez acheter plus de yaourts glacés. Et en même temps vous achèterez probablement moins de cornets de glace. Yaourts glacés et cornets de glace satisfont des désirs similaires (...).</br>
+		<strong>Les goûts.</strong> Il s'agit là du déterminant le plus évident de votre demande. Si vous adorez les glaces, vous en consommez beaucoup. (…) </br></br>
+
+		(1) Bien substituable : Un bien est substituable à un autre lorsque l'on peut remplacer l'un par l'autre. 
+
 		
+		 <p style="text-align: right;"> N.G. Mankiw,  <em>Principes de l'économie</em>, Economica, 1998</p>
+
+		</article>
+
+		<h3>A retenir</h3>
+
+		<p class="définition"><strong>Définition:</strong></br></br>
+		<strong>Demande :</strong> C'est la quantité d'un bien ou d'un service que les demandeurs sont disposés à acquérir à un niveau de prix déterminé.</br></br>
+		<em>Remarque : on distingue la demande individuelle (la quantité demandée par une seule personne en fonction du prix) et la demande de marché (la quantité demandée par tous les demandeurs d’un marché en fonction du prix).</em></p>
+
+		<p class="définition"><strong>Définition:</strong></br></br>
+		<strong>La loi de la demande :</strong> Plus le prix d'un produit augmente, plus la quantité demandée diminue (et inversement). La demande est donc une fonction décroissante du prix. </br></br>
+		<em>Remarque : Il existe certaines exceptions à la loi de la demande, en particulier pour les biens de luxe (qu'on appelle aussi les bien Veblen), on remarque que pour ce type de bien là les quantités demandée peuvent augmenter quand les prix augmente. Cela s'explique parce que ce ne sont pas juste des produits de consommation mais des produits qui ont pour but d'affirmer son rang social (rolex, voiture de luxe etc.). Le reste des biens "normaux" suivent bien la loi de la demande.</em></p>
+
+		<p class="rappel"><strong>A retenir :</strong></br></br>
+		Le niveau de la demande sur un marché est principalement déterminée par 5 choses :</br></br>
+		<strong>–  Le prix du bien :</strong> C'est le plus important ! Il s'agit de la loi de la demande. Si le prix d'un bien augmente, on en achète moins (et inversement)</br>
+		<strong>–  Le revenu :</strong> Quand le revenu d'un demandeur augmente, son pouvoir d'achat augmente et donc sa demande augmente (et inversement si son revenu diminue).</br>
+		<strong>–  Le prix des produits substituables :</strong> Si le prix des pizzas diminue fortement et que le prix des Hamburger ne bouge pas, il est possible que ma demande de pizza augmente et que ma demande d'hamburger diminue).</br>
+		<strong>–  Les goûts.</strong> Cela est complètement subjectif, mais si je n'aime la pizza, je vais contiuner à manger des Burger même si le prix des pizza diminue beaucoup.</br> 
+		<strong>–  Le contexte :</strong> La demande peut parfois être modifiée par une situation. Par exemple quand il fait très froid, la demande de glace diminue (par rapport à quand il fait chaud), ou en période d'épidémie, la demande de masques augmente.</p>
 
 
+		<h3>2. La courbe de demande de marché</h3>
+
+		<p class="encadré" style="text-align: center;"><strong>Activité 1 : Apprendre à tracer la courbe de demande de glaces sur un marché</strong></p>
+
+		<p><strong><u>La demande individuelle</u></strong></br></br>
+
+ 		Sur le marché des glaces, voici comment évolue la demande individuelle d’Achille en fonction du prix des glaces :</p>
+
+<table class="table">
+   <tr>
+       <th class="th" style="text-align: left;">Prix d'une glace en €</th>
+       <td class="td">0,5</td>
+       <td class="td">1  </td>
+       <td class="td">1,5</td>
+       <td class="td">2  </td>
+       <td class="td">2,5</td>
+       <td class="td">3  </td>
+   </tr>
+   <tr>
+       <th class="th" style="text-align: left;">Quantité demandée par Achille</th>
+       <td class="td">10</td>
+       <td class="td">8</td>
+       <td class="td">6</td>
+       <td class="td">4</td>
+       <td class="td">2</td>
+       <td class="td">0</td>
+   </tr>
+</table>
+
+	<p>Lecture : Si une glace coûte 1 €, alors Achille souhaite en acheter 8. Par contre si le prix passe à 2,5€ la glace, alors Achille souhaite en acheter seulement 2.</br></br>
+	Remaque : On voit que la demande de glace suit bien la loi de la demande car losrque les prix augmentent, la demande diminue, et inversement.</br></br>
+	<strong>Pourquoi la Demande d'Achille suit-elle la loi de la demande ?</strong></br>
+	<em>Effet de revenu :</em> Si les prix augmentent, mon pouvoir d'achat diminue, je peux donc acheter moins de biens et services</br>
+	<em>Effet de substitution :</em> Si le prix des glaces augmente, Achille va peut-être choisir de consommer d’autres biens moins coûteux comme du yaourt glacé ou un granita, il va donc remplacer (substituer) sa consommation de glace par une autre.</br></br>
+	Remarque : L'effet de revenu et l'effet de substitution se cumulent et explique tout les deux la décroissance de la demande avec l'augmentation des prix.</p>
+
+		<p><strong><u>La demande de marché</u></strong></br></br>
+
+		Maintenant que nous avons vu comment lire la demande individuelle, nous allons étudier la demande de marché (qui est la somme de toutes les demandes individuelles du marché). </br> On considère que dans le petit village où vit Achille, il n’y a que 4 personnes qui mangent des glaces car les autres sont intolérantes au lactose, voici donc les demandes individuelles d’Achille, Thalie, Ulysse et Calliopé :
+
+<table class="table">
+   <tr>
+       <th class="th">Prix d'une glace en €</th>
+       <th class="th">Demande d'Achille</th>
+       <th class="th">Demande de Thalie</th>
+       <th class="th">Demande d'Ulysse</th>
+       <th class="th">Demande de Calliopé</th>
+       <th class="th">Demande de marché</th>
+       
+   </tr>
+   <tr>
+       <td class="td">0,5</td>
+       <td class="td">10</td>
+       <td class="td">12</td>
+       <td class="td">8</td>
+       <td class="td">15</td>
+       <td class="td"></td>
+   </tr>
+   <tr>
+       <td class="td">1</td>
+       <td class="td">8</td>
+       <td class="td">10</td>
+       <td class="td">6</td>
+       <td class="td">11</td>
+       <td class="td"></td>
+   </tr>
+   <tr>
+       <td class="td">1,5</td>
+       <td class="td">6</td>
+       <td class="td">8</td>
+       <td class="td">4</td>
+       <td class="td">7</td>
+       <td class="td"></td>
+   </tr>
+   <tr>
+       <td class="td">2</td>
+       <td class="td">4</td>
+       <td class="td">6</td>
+       <td class="td">2</td>
+       <td class="td">3</td>
+       <td class="td"></td>
+   </tr>
+   <tr>
+       <td class="td">2,5</td>
+       <td class="td">2</td>
+       <td class="td">4</td>
+       <td class="td">0</td>
+       <td class="td">1</td>
+       <td class="td"></td>
+   </tr>
+   <tr>
+       <td class="td">3</td>
+       <td class="td">0</td>
+       <td class="td">2</td>
+       <td class="td">0</td>
+       <td class="td">0</td>
+       <td class="td"></td>
+   </tr>
+</table>
+
+		<p>Remarque : on voit que les quatre demande que nous avons dans ce tableau ne sont pas identiques. En effet, lorsqu'une glace coûte 1€, Achille souhaite en acheter 8 alors que Thalie souhaite en acheter 10 et Ulysse en demande 6. </br>Cela s'explique simplement parce que l'un des déterminants de la demande est <strong>le goût :</strong> Les 4 personnes n'ont pas exactement les mêmes goûts, ils n'ont donc pas exactement les mêmes demandes.</p>
+
+		<p>Maintenant il s'agira de <strong>calculer la demande de marché</strong>, c'est-à-dire la demande totale sur tout ce marché des glaces. Pour calculer la demande de marché, le raisonnement est très simple, il suffit d'ajouter toutes les demandes individuelles pour chaque niveau de prix.</br>
+		Exemple : ici si le prix d'une glace est de 50 centimes, Achille en achète 10, Thalie en achète 12, Ulysse en achète 8 et Calliopé en achète 15. Ainsi pour ce prix, la demande de marché est de 10 + 12 + 8 + 15 = 45.</p>
+
+		<p> Avec la même méthode on peut donc remplir la dernière colone du tableau :</p>
+
+<table class="table">
+   <tr>
+       <th class="th">Prix d'une glace en €</th>
+       <th class="th">Demande d'Achille</th>
+       <th class="th">Demande de Thalie</th>
+       <th class="th">Demande d'Ulysse</th>
+       <th class="th">Demande de Calliopé</th>
+       <th class="th"><strong>Demande de marché</strong></th>
+       
+   </tr>
+   <tr>
+       <td class="td">0,5</td>
+       <td class="td">10</td>
+       <td class="td">12</td>
+       <td class="td">8</td>
+       <td class="td">15</td>
+       <td class="td" style="color: red;">45</td>
+   </tr>
+   <tr>
+       <td class="td">1</td>
+       <td class="td">8</td>
+       <td class="td">10</td>
+       <td class="td">6</td>
+       <td class="td">11</td>
+       <td class="td" style="color: red;">35</td>
+   </tr>
+   <tr>
+       <td class="td">1,5</td>
+       <td class="td">6</td>
+       <td class="td">8</td>
+       <td class="td">4</td>
+       <td class="td">7</td>
+       <td class="td" style="color: red;">25</td>
+   </tr>
+   <tr>
+       <td class="td">2</td>
+       <td class="td">4</td>
+       <td class="td">6</td>
+       <td class="td">2</td>
+       <td class="td">3</td>
+       <td class="td" style="color: red;">15</td>
+   </tr>
+   <tr>
+       <td class="td">2,5</td>
+       <td class="td">2</td>
+       <td class="td">4</td>
+       <td class="td">0</td>
+       <td class="td">1</td>
+       <td class="td" style="color: red;">7</td>
+   </tr>
+   <tr>
+       <td class="td">3</td>
+       <td class="td">0</td>
+       <td class="td">2</td>
+       <td class="td">0</td>
+       <td class="td">0</td>
+       <td class="td" style="color: red;">2</td>
+   </tr>
+</table>
+
+</br>
+
+<p><strong><u>Représentation graphique de la demande de marché</u></strong></br></br>
+
+	Les économistes modélisent la demande des consommateurs en la représentant dans un repère d'axes où les prix sont en ordonnées et les quantités en abscisses. Ils commencent par placer chacune des quantités demandées en fonction de leur prix respectif puis ils relient chacun des points obtenus. Ils obtiennent ainsi la courbe de demande de marché qui représente l'ensemble des quantités demandées par les consommateur aux différents prix possibles de ce bien.</br></br>
+
+	<strong>Attention !!! On met <u>toujours</u> les Prix en ordonnée (l'axe vertical) et les quantités en abscisse (l'axe horizontal)</strong></br></br>
+
+	Quand on trace notre courbe de demande sur le graphique, on obtient donc ceci :</br>
+	<center><img src="{{ url_for('static', filename='images/demandemarché.jpg') }}" class="imagedoc" alt="image vidéo2"/></a></center>
+</p>
+
+	<h3>3. L'offre et ces déterminant</h3>
+
+		<article class="document"><strong>Document 3 : L'offre et ses déterminants</strong></br>
+		[…] La quantité offerte d'un bien ou d'un service se définit comme la quantité que les vendeurs sont prêts à vendre [à un prix déterminé]. </br>
+		Une fois encore, considérons le marché des cornets de glace et voyons quels sont les facteurs qui déterminent la quantité offerte. Supposons que vous dirigiez une entreprise qui produit et vend des cornets de glace. Qu'est – ce qui déterminera la quantité de glace que vous allez produire et mettre en vente ? Voici quelques réponses possibles : </br>
+		<strong>Le prix.</strong> Le prix des glaces et l'un des déterminants. Quand le prix des glaces est élevé, cette vente est profitable et la quantité offerte est grande. […] Au contraire, si le prix des glaces est faible, votre entreprise est peu rentable et vous produisez moins de glaces. Si le prix descend trop bas, vous décideriez même de cesser votre activité, et la quantité sera réduite à zéro. 
+		Comme la quantité offerte augmente quand le prix s'élève et diminue quand le prix baisse, on dit que la quantité offerte est une fonction croissante du prix. Cette relation entre quantité offerte et prix est appelée loi de l'offre : toutes choses égales par ailleurs, quand le prix d'un bien augmente, la quantité offerte augmente aussi. </br>
+		<strong>[Le coût de production].</strong> Pour fabriquer vos glaces, votre entreprise utilise : de la crème, du sucre, des aromates, des machines, l'immeuble et le terrain sur lequel est située l'usine, le travail des employés qui font tourner les machines. Si [les coûts de production augmentent], la production est moins profitable, et vous offrez moins de glaces sur le marché. Si les coûts de production augmentent trop, vous pouvez décider de fermer l'usine et de ne plus produire de glaces du tout. [...]  
+		<p style="text-align: right;"> N.G. Mankiw,  <em>Principes de l'économie</em>, Economica, 1998</p>
+		</article>
+
+		<h3>A retenir</h3>
+
+		<p class="définition"><strong>Définition:</strong></br></br>
+		<strong>Offre : </strong> C'est la quantité d'un bien ou d'un service que les producteurs sont disposés à offrir à un prix déterminé.</br></br>
+		<em>Remarque :  Encore une fois on distingue l’offre individuelle (quantités offertes par un seul producteurs) et l’offre de marché (quantités offertes par tous les producteurs d’un même bien ou service sur un marché).</em></br></br>
+
+		<strong>La loi de l'Offre :</strong> Plus le prix d'un produit augmente, plus la quantité offerte augmente (et inversement). L'Offre est donc une fonction décroissante du prix.</br></br>
+		<em>Remarque :  Les quantités offertes par un individus augmentent principalement en raison des coûts et cela sera expliqué dans la partie III du cours. Pour l'offre de marché (qui agrège l'offre de tous les producteurs) elle augmente avec le prix parce que quand les prix augmente, cela signifie qu'il y a des perspectives de profits et donc de nouveaux offreurs vont entrer sur le parché. Par exemple si les poire se vendent beuaucoup plus cher que les pommes, il sera intéressant pour un agriculteur de produire davantage de poires, et cela fait donc augmenter l'offre du marché.</em></p>
 
 
-    </p>
+		<p class="rappel"><strong>A retenir :</strong></br></br>
+		Le niveau de l'offre sur un marché est principalement déterminée par 3 choses :</br></br>
+		<strong>–  Le prix du bien :</strong> C'est le plus important ! Il s'agit de la loi de l'offre. Si le prix d'un bien augmente, la production est plus rentable et donc les quantités offertes augmentent</br>
+		<strong>–  Les coûts de production.</strong> Une augmentation des coûts de production rend la production moins rentable. Les producteurs sont donc de moins en moins incités à produire. Par exemple pour les glaces si le prix du lait augmente, cela va couter plus cher de produire des glace et l'offre va diminuer. (A l’inverse, quand les coûts de production diminuent, la production est plus rentable et doncl'offre augmente)</br> 
+		<strong>–  Le contexte :</strong> Par exemple les conditions climatiques peuvent affecter l'offre : s'il y a beaucoup de pluie et beaucoup de soleil, la production agricole sera meilleure et cela va donc faire augmenter l'offre. De la même façon, dans un contexte de crise sanitaire, des entreprises se reconvertissent pour produire de nouveaux biens (par exemple des masques ou des respirateurs) et cela fait donc augmenter l'offre de marché pour ces biens.</p></p>
+
+
+	<h3>4. La courbe d'offre de marché</h3>
+
+	<p class="encadré" style="text-align: center;"><strong>Activité 2 : Apprendre à tracer la courbe d'offre de glaces sur un marché</strong></p>
+	<p>Cette activité sera assez semblable à la précédente dans le raisonnement, on va donc aller moins profondément dans le détail. Je vais donc présenter l'activité avec les questions posées, puis faire la correction. je vous invite à essayer d'abord d'y réfléchir par vous-même avant de regarder la correction.</br></br>
+	Comme pour la demande, les économistes modélisent l'offre des producteurs dans un repère d'axes où les prix sont en ordonnées et les quantités en abscisses. Ils commencent par placer les différentes quantités offertes en fonction de leur prix respectif puis les relient entre elles. Ils obtiennent ainsi la courbe d'offre qui représente la quantité offerte pour chaque niveau de prix possible d'un bien. </br>
+	Voici les Offres individuelle de quatre producteurs de glace de la ville : Häagen, Dazs, Ben et Jerry.</p>
+
+	<table class="table">
+   <tr>
+       <th class="th">Prix d'une glace en €</th>
+       <th class="th">Offre d’Häagen</th>
+       <th class="th">Offre de Dazs</th>
+       <th class="th">Offre de Ben</th>
+       <th class="th">Offre de Jerry</th>
+       <th class="th"><strong>Offre du marché</strong></th>
+       
+   </tr>
+   <tr>
+       <td class="td">0,5</td>
+       <td class="td">0</td>
+       <td class="td">0</td>
+       <td class="td">5</td>
+       <td class="td">0</td>
+       <td class="td" style="color: red;"></td>
+   </tr>
+   <tr>
+       <td class="td">1</td>
+       <td class="td">5</td>
+       <td class="td">0</td>
+       <td class="td">10</td>
+       <td class="td">5</td>
+       <td class="td" style="color: red;"></td>
+   </tr>
+   <tr>
+       <td class="td">1,5</td>
+       <td class="td">10</td>
+       <td class="td">5</td>
+       <td class="td">15</td>
+       <td class="td">10</td>
+       <td class="td" style="color: red;"></td>
+   </tr>
+   <tr>
+       <td class="td">2</td>
+       <td class="td">15</td>
+       <td class="td">10</td>
+       <td class="td">18</td>
+       <td class="td">12</td>
+       <td class="td" style="color: red;"></td>
+   </tr>
+   <tr>
+       <td class="td">2,5</td>
+       <td class="td">18</td>
+       <td class="td">13</td>
+       <td class="td">20</td>
+       <td class="td">14</td>
+       <td class="td" style="color: red;"></td>
+   </tr>
+   <tr>
+       <td class="td">3</td>
+       <td class="td">21</td>
+       <td class="td">15</td>
+       <td class="td">25</td>
+       <td class="td">19</td>
+       <td class="td" style="color: red;"></td>
+   </tr>
+</table>
+	
+	<p>Q1. Calculez l’Offre de marché et remplissez la dernière colonne.</br>
+	Q2. Tracez dans un repère d'axes la courbe d'offre de cornets de glace. </br>
+	Q3. Quelle est la forme de la courbe d'offre obtenue ? En quoi cela illustre – t – il la loi de l'offre ?</p>
+
+	<p style="color: red">Correction </br></br>
+
+	Q1. L'offre de marché est la somme des offres individuelles. Ainsi pour un prix de 50 centimes, seule l'entreprise Ben est prête à produire 5 glaces, et les autres ne commencent même pas à produire. L'offre de marché est donc 0+0+5+0 = 5. </br>
+	Avec le même raisonnement, on calcule ainsi la dernière colonne du tableau :</p>
+    
+<table class="table">
+   <tr>
+       <th class="th">Prix d'une glace en €</th>
+       <th class="th">Offre d’Häagen</th>
+       <th class="th">Offre de Dazs</th>
+       <th class="th">Offre de Ben</th>
+       <th class="th">Offre de Jerry</th>
+       <th class="th"><strong>Offre du marché</strong></th>
+       
+   </tr>
+   <tr>
+       <td class="td">0,5</td>
+       <td class="td">0</td>
+       <td class="td">0</td>
+       <td class="td">5</td>
+       <td class="td">0</td>
+       <td class="td" style="color: red;">5</td>
+   </tr>
+   <tr>
+       <td class="td">1</td>
+       <td class="td">5</td>
+       <td class="td">0</td>
+       <td class="td">10</td>
+       <td class="td">5</td>
+       <td class="td" style="color: red;">20</td>
+   </tr>
+   <tr>
+       <td class="td">1,5</td>
+       <td class="td">10</td>
+       <td class="td">5</td>
+       <td class="td">15</td>
+       <td class="td">10</td>
+       <td class="td" style="color: red;">40</td>
+   </tr>
+   <tr>
+       <td class="td">2</td>
+       <td class="td">15</td>
+       <td class="td">10</td>
+       <td class="td">18</td>
+       <td class="td">12</td>
+       <td class="td" style="color: red;">55</td>
+   </tr>
+   <tr>
+       <td class="td">2,5</td>
+       <td class="td">18</td>
+       <td class="td">13</td>
+       <td class="td">20</td>
+       <td class="td">14</td>
+       <td class="td" style="color: red;">65</td>
+   </tr>
+   <tr>
+       <td class="td">3</td>
+       <td class="td">21</td>
+       <td class="td">15</td>
+       <td class="td">25</td>
+       <td class="td">19</td>
+       <td class="td" style="color: red;">80</td>
+   </tr>
+</table>
+
+<p style="color: red">Q2. <strong>Attention !!! On met <u>toujours</u> les Prix en ordonnée (l'axe vertical) et les quantités en abscisse (l'axe horizontal)</strong></br></br>
+Quand on trace notre courbe de demande sur le graphique, on obtient donc ceci :</br>
+<center><img src="{{ url_for('static', filename='images/offredemarché.jpg') }}" class="imagedoc" alt="image vidéo2"/></a></center>
+<p style="color: red">Q3. La courbe d'offre est croissante, cela démontre bien la loi de l'offre : quand le prix des glaces augmentent, la quantité offerte augmente.</p></p>
+
+
+		<h2>B – L’équilibre du marché</h2>
+		<h3>1. Qu’est-ce que l’équilibre du marché ?</h3>
+
+<p class="définition"><strong>Définition:</strong></br></br>
+<strong>L'équilibre du marché : </strong>Le marché est dit à l'équilibre quand les quantités offertes sont égales aux quantités demandées. Cela signifie que toute la production trouve acheteur, il n'y a pas d'invendus ni de demandeurs insatisfaits.</br></br>
+<em>Remarque :  L'équilibre du marché est une situation qui arrive pour un certain prix, qu'on appelle le prix d'équilibre, et pour une certaine quantité, qu'on appelle quantité d'équilibre.</em></br>
+
+<p><em>Exemple :</em></br>
+Voici l'offre et la demande de pommes sur un marché concurrentiel :</p>
+<table class="table">
+   <tr>
+       <th class="th">Prix d'un kg de pommes en €</th>
+       <td class="td">1</td>
+       <td class="td">2</td>
+       <td class="td">3</td>
+       <td class="td">4</td>
+       <td class="td">5</td> 
+   </tr>
+   <tr>
+       <th class="th">Offre de marché en tonne</th>
+       <td class="td">30</td>
+       <td class="td">60</td>
+       <td class="td">120</td>
+       <td class="td">150</td>
+       <td class="td">250</td>
+   </tr>
+   <tr>
+   	   <th class="th">Demande de marché en tonne</th>
+       <td class="td">220</td>
+       <td class="td">170</td>
+       <td class="td">120</td>
+       <td class="td">70</td>
+       <td class="td">20</td>
+   </tr>
+</table>
+		
+	<p>Dans cet exemple on voit que l'offre et le Demande sont égales pour un prix de 3€ le kg car elles sont toutes les deux égales à 120 tonnes.</br>
+	Ainsi, pour ce marché : prix d'équilibre = 3€ le kg ; quantité d'équilibre = 120 tonnes de pommes.</p>
+
+	<p class="rappel"><strong>Remarque :</strong></br></br>
+	L'équilibre du marché est une situation particulière qui arrive pour un certain niveau de prix. Ainsi, si le prix est au-dessous ou au-dessus de ce prix d'équilibre, alors le marché n'est plus à l'équilibre, cela signifie que l'offre n'est pas égale à la demande. On distingue alors deux situation :</br></br>
+	<strong><u>Si l'offre est supérieure à demande :</u></strong> Cela singifie que toute l'offre des producteurs n'a pas été achetée (parce qu'il n'y a pas assez de demande) et donc que les producteurs ont trop produit. On appelle cette situation <strong>une situation de surproduction</strong>.</br></br>
+	<strong><u>Si l'offre est inférieure à demande :</u></strong> Cela singifie qu'il n'y a pas assez d'offre par rapport au niveau de la demande et donc certains demandeurs ne pourront pas acheter ce qu'ils voudraient. On appelle cette situation <strong>une situation de pénurie</strong>.</br>
+
+	<p><em>Par exemple : Reprenons l'exemple du marché des pommes présentés ci-dessus</em></br>
+	Si le prix du marché se fixe à 2€ le kilogramme. Alors la demande est de 170 tonnes et l'offre est de 60 tonnes. On voit donc que la demande est supérieure à l'offre. Il n'y aura pas assez de pommes pour tous les demandeurs : <u>c'est une situation de pénurie.</u></br>
+	Si le prix du marché se fixe à 5€ le kilogramme. Alors la demande est de 20 tonnes et l'offre est de 250 tonnes. On voit donc que l'offre est supérieure à la demande. Les offreurs n'arriveront pas à vendre toute leur production : <u>C'est une situation de suproduction.</u>
+</p>
+
+		<h3>2. Comment trouver graphiquement l’équilibre du marché ?</h3>
+
+	<p>Nous allons reprendre l'exemple du marché des glaces que nous avons déjà étudié ci-dessus. Pour rappel, dans le II.A.2 et dans le II.A.4 nous avions obenu les courbes suivantes :</p>
+	<table style="margin-right: 20px">
+	<thead>
+	   <tr>
+	     <th><em>Demande de glace</em></th>
+	     <th><em>offre de glace</em></th>
+	    </tr>
+	</thead>
+	<tbody>
+	   <tr>
+	     <td><img src="{{ url_for('static', filename='images/dem.jpg') }}" class="imagevideo2" alt="image vidéo" style="max-width: 450px;" /></a></td>
+	     <td><img src="{{ url_for('static', filename='images/off.jpg') }}" class="imagevideo2" alt="image vidéo" style="max-width: 450px;"/></a></td>
+	     </tr>
+	</tbody>
+	</table>
+
+	<p><strong><u>Tracer la courbe d'offre et de demande sur le même graphique</u></strong></br></br>
+
+	Avant de tracer les courbes nous allons donc commencer par écrire l'offre et la demande dans un même tableau</p>
+<table class="table">
+   <tr>
+       <th class="th">Prix d'une glace en €</th>
+       <td class="td">0,5</td>
+       <td class="td">1</td>
+       <td class="td">1,5</td>
+       <td class="td">2</td>
+       <td class="td">2,5</td> 
+       <td class="td">3</td> 
+   </tr>
+   <tr>
+       <th class="th">Demande de marché</th>
+       <td class="td">45</td>
+       <td class="td">35</td>
+       <td class="td">25</td>
+       <td class="td">15</td>
+       <td class="td">7</td>
+       <td class="td">2</td>
+   </tr>
+   <tr>
+   	   <th class="th">Offre de marchée</th>
+       <td class="td">5</td>
+       <td class="td">20</td>
+       <td class="td">40</td>
+       <td class="td">55</td>
+       <td class="td">65</td>
+       <td class="td">80</td>
+   </tr>
+</table>
+
+	<p>On remarque qu'on ne peut pas déterminer l'équilibre du marché en regardant uniquement le tableau. On voit que quand les glaces coûtent 1€, la demande est supérieure à l'offre (pénurie), et quand le prix passe à 1,5€, c'est l'offre qui est supérieure à la demande (surproduction). On se doute donc que l'équilibre est quelque part entre les deux, mais on ne peut pas conclure ici. Il va falloir le déterminer graphiquement.</br>
+	Afin de déterminer graphiquement l'équilibre du marché, il faut d'abord tracer les courbes d'offre et de demande sur un même graphique. On va donc faire exactement la même chose que précédemment avec toujours les prix en ordonnée, et les quantité en abscisse. La seule différence étant que ici l'axe des quantité désigne aussi bien les quantités demandées que les quantités offertes.</p>
+	
+	<p>On obtient donc ceci :</br>
+	<center><img src="{{ url_for('static', filename='images/ofde.jpg') }}" class="imagedoc" alt="image vidéo2"/></a></center></p>
+
+	<p><strong><u>Déterminer l'équilibre du marché</u></strong>
+	<p class="rappel">Le prix d'équilibre est le prix tel que l'offre est égale à la demande. Graphiquement, le seul point où l'offre est égale à la demande est donc le point d'intersection entre les courbes d'offre et de demande.</br> Ainsi, pour déterminer graphiquement l'équilibre du marché, il suffit de regarder les prix et les quantités échangées qui correspondent au point d'intersection entre la courbe d'offre et la courbe de demande.</p>
+	<center><img src="{{ url_for('static', filename='images/ofde2.jpg') }}" class="imagedoc" alt="image vidéo2"/></a></center></p>
+	<p>Ici le prix d'équilibre est donc de 1,25€ la glace, et pour ce prix-là, 30 glaces seront échangées sur ce marché.</p>
+
+	<h3>Exercice d'application :</h3>
+	<p>Cliquez sur le lien suivant pour aller faire le quizz d'appropriation du cours (obligatoire et noté, n'oubliez pas d'indiquer votre nom de famille et de retenir votre code personnel)</p>
+	<p><a href="https://www.quiziniere.com/#/Exercice/6X386L" onclick="window.open(this.href); return false;">https://www.quiziniere.com/#/Exercice/6X386L</a></br>(ou sinon vous pouvez aussi entrer le code 6X386L sur la page d'acceuil de la quiziniere)</p>
+
+
 
 </section>
+    </body>
+</html>
+
 {% endblock %}
