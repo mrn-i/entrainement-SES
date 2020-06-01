@@ -23,7 +23,7 @@ os.environ['DBHOST'] = "ec2-54-247-169-129.eu-west-1.compute.amazonaws.com"
 os.environ['DBNAME'] = "dohirlotb7iqt"
 '''
 
-#os.environ["APP_SETTINGS"] = "config.DevelopmentConfig"
+os.environ["APP_SETTINGS"] = "config.ProductionConfig"
 
 app = Flask(__name__)
 #Permet d'importer toutes les variables de configuration
@@ -138,23 +138,5 @@ def test3():
     else :
         return render_template("test3.html", form = form)
 
-
-@app.route("/predict", methods = ["GET", "POST"])
-def predict():
-    if request.method == "POST":
-        regressor = joblib.load("./linear_regression_model.pkl")
-        yearsExperience = [[float(dict(request.form)["YearsExperience"])]]
-        prediction = (regressor.predict(yearsExperience)/100)*100
-
-        result = Result(
-            YearsExperience = yearsExperience[0][0],
-            Prediction = float(prediction)
-        )
-
-        db.session.add(result)
-        db.session.commit()
-
-
-    return render_template("prediction.html", prediction = int(prediction), YearsExperience = int(yearsExperience[0][0]))
 
 
